@@ -20,8 +20,8 @@ Conversion
 ==========
 
 For the moment, the handbook is available here in four different formats:
- * The original layout from the official home in html, with one section per page.
- * A one page HTML version, with all the chapters and sections on the same page.
+ * The [original layout](http://pierreandrews.net/TheDataJournalismHandbook/splithtml/1.0/en/) from the official home in html, with one section per page.
+ * A [one page HTML version](http://pierreandrews.net/TheDataJournalismHandbook/onefilehtml/1.0/en/), with all the chapters and sections on the same page.
  * An automatic conversion of this HTML to two major ebook formats: [EPub](https://github.com/Mortimerp9/TheDataJournalismHandbook/raw/master/TheDataJournalismHandbook.epub) and [Mobi for Kindle](https://github.com/Mortimerp9/TheDataJournalismHandbook/raw/master/TheDataJournalismHandbook.mobi), using [Calibre](calibre-ebook.com).
  * A [PDF printout](https://github.com/Mortimerp9/TheDataJournalismHandbook/raw/master/TheDataJournalismHandbook.pdf) of this HTML.
 
