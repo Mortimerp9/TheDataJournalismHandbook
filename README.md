@@ -16,6 +16,18 @@ This github repository is a mirror of the beta 1.0 version that makes it easy to
 
 Any help in maintaining this repository is welcome, if you want to provide corrections or other formats to download, let me know.
 
+Conversion
+==========
+
+For the moment, the handbook is available here in four different formats:
+ * The original layout from the official home in html, with one section per page.
+ * A one page HTML version, with all the chapters and sections on the same page.
+ * An automatic conversion of this HTML to two major ebook formats: [EPub](https://github.com/Mortimerp9/TheDataJournalismHandbook/raw/master/TheDataJournalismHandbook.epub) and [Mobi for Kindle](https://github.com/Mortimerp9/TheDataJournalismHandbook/raw/master/TheDataJournalismHandbook.mobi), using [Calibre](calibre-ebook.com).
+ * A [PDF printout](https://github.com/Mortimerp9/TheDataJournalismHandbook/raw/master/TheDataJournalismHandbook.pdf) of this HTML.
+
+The single page HTML makes it easy for you to download the book and read it offline on your computer. O'Reilly publishes copy edited and formatted editions of this book, in physical copies and in ebook format, they will be better formatted than the current Kindle and PDF version available here.
+
+
 License
 =======
 
