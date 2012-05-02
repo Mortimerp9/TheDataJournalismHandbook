@@ -1,4 +1,22 @@
-TheDataJournalismHandbook
-=========================
+The Data Journalism Handbook
+============================
 
-The Data Journalism Handbook was born at a 48 hour workshop at MozFest 2011 in London. It subsequently spilled over into an international, collaborative effort involving dozens of data journalism’s leading advocates and best practitioners.  In the 6 months that passed between the book’s inception to its first full release, hundreds of people have contributed in various ways. While we have done our best to keep track of them all, we have had our fair share of anonymous, pseudonymous and untraceable edits.  To all of those people who have contributed and are not listed below, we say two things. Firstly, thank you. Secondly, can please tell us who you are so that we can give credit where credit is due.
+The Data Journalism Handbook was born at a 48 hour workshop at MozFest 2011 in London. It subsequently spilled over into an international, collaborative effort involving dozens of data journalism’s leading advocates and best practitioners.
+
+In the 6 months that passed between the book’s inception to its first full release, hundreds of people have contributed in various ways. While we have done our best to keep track of them all, we have had our fair share of anonymous, pseudonymous and untraceable edits.
+
+To all of those people who have contributed and are not listed below, we say two things. Firstly, thank you. Secondly, can please tell us who you are so that we can give credit where credit is due.
+
+The GitHub Mirror
+-----------------
+
+The Data Journalism Handbook has [its official home](http://datajournalismhandbook.org/1.0/en/) where you can find the latest version, translations and buy ebook and physical copies of the book through [O'Reilly](http://shop.oreilly.com/product/0636920025603.do).
+
+This github repository is a mirror of the beta 1.0 version that makes it easy to download it for local viewing on your computer and printing if you like cutting trees. It also provides a conversion to the Kindle (MOBI) format and to PDF.
+
+Any help in maintaining this repository is welcome, if you want to provide corrections or other formats to download, let me know.
+
+License
+=======
+
+The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike license</a>. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
