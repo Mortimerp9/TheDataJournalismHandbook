@@ -1,0 +1,301 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Getting Data from the Web - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="getting_data_3.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="getting_data_3.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="getting_data.html" class="btn">Chapter: Getting Data</a>
+        
+        
+            <a href="getting_data_4.html" class="btn">Next: The Web as a Data Source</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="Getting Data from the Web #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_getting_data_from_the_web">Getting Data from the Web</h3>
+<div class="paragraph"><p>You&#8217;ve tried everything else, and you haven&#8217;t managed to get your hands on the data you want. You&#8217;ve found the data on the web, but, alas&#8201;&#8212;&#8201;no download options are available and copy-paste has failed you. Fear not, there may still be a way to get the data out. For example you can:</p></div>
+<div class="ulist"><ul><li>
+<p>
+Get data from web-based APIs, such as interfaces provided by online databases and many modern web applications (including Twitter, Facebook and many others). This is a fantastic way to access government or commercial data, as well as data from social media sites.
+</p>
+</li>
+<li>
+<p>
+Extract data from PDFs. This is very difficult, as PDF is a language for printers and does not retain much information on the structure of the data that is displayed within a document. Extracting information from PDFs is beyond the scope of this book, but there are some tools and tutorials that may help you do it.
+</p>
+</li>
+<li>
+<p>
+Screen scrape web sites. During screen scraping, you&#8217;re extracting structured content from a normal web page with the help of a scraping utility or by writing a small piece of code. While this method is very powerful and can be used in many places, it requires a bit of understanding about how the web works.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>With all those great technical options, don&#8217;t forget the simple options: often it is worth to spend some time searching for a file with machine-readable data or to call the institution which is holding the data you want.</p></div>
+<div class="paragraph"><p>In this chapter we walk through a very basic example of scraping data from an HTML web page.</p></div>
+<div class="sect3">
+<h4 id="_what_is_machine_readable_data">What is machine-readable data?</h4>
+<div class="paragraph"><p>The goal for most of these methods is to get access to machine-readable data. Machine readable data is created for processing by a computer, instead of the presentation to a human user. The structure of such data relates to contained information, and not the way it is displayed eventually. Examples of easily machine-readable formats include CSV, XML, JSON and Excel files, while formats like Word documents, HTML pages and PDF files are more concerned with the visual layout of the information. PDF for example is a language which talks directly to your printer, it&#8217;s concerned with position of lines and dots on a page, rather than distinguishable characters.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_scraping_web_sites_what_for">Scraping web sites: what for?</h4>
+<div class="paragraph"><p>Everyone has done this: you go to a web site, see an interesting table and try to copy it over to Excel so you can add some numbers up or store it for later. Yet this often does not really work, or the information you want is spread across a large number of web sites. Copying by hand can quickly become very tedious, so it makes sense to use a bit of code to do it.</p></div>
+<div class="paragraph"><p>The advantage of scraping is that you can do it with virtually any web site&#8201;&#8212;&#8201;from weather forecasts to government spending, even if that site does not have an API for raw data access.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_what_you_can_and_cannot_scrape">What you can and cannot scrape</h4>
+<div class="paragraph"><p>There are, of course, limits to what can be scraped. Some factors that make it harder to scrape a site include:</p></div>
+<div class="ulist"><ul><li>
+<p>
+Badly formatted HTML code with little or no structural information e.g. older government websites.
+</p>
+</li>
+<li>
+<p>
+Authentication systems that are supposed to prevent automatic access e.g. CAPTCHA codes and paywalls.
+</p>
+</li>
+<li>
+<p>
+Session-based systems that use browser cookies to keep track of what the user has been doing.
+</p>
+</li>
+<li>
+<p>
+A lack of complete item listings and possibilities for wildcard search.
+</p>
+</li>
+<li>
+<p>
+Blocking of bulk access by the server administrators.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Another set of limitations are legal barriers: some countries recognize database rights, which may limit your right to re-use information that has been published online. Sometimes, you can choose to ignore the license and do it anyway&#8201;&#8212;&#8201;depending on your jurisdiction, you may have special rights as a journalist. Scraping freely available Government data should be fine, but you may wish to double check before you publish. Commercial organizations&#8201;&#8212;&#8201;and certain NGOs&#8201;&#8212;&#8201;react with less tolerance and may try to claim that you&#8217;re &#8220;sabotaging&#8221; their systems. Other information may infringe the privacy of individuals and thereby violate data privacy laws or professional ethics.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_tools_that_help_you_scrape">Tools that help you scrape</h4>
+<div class="paragraph"><p>There are many programs that can be used to extract bulk information from a web site, including browser extensions and some web services. Depending on your browser, tools like <a href="http://www.readability.com/">Readability</a> (which helps extract text from a page) or <a href="http://www.downthemall.net/">DownThemAll</a> (which allows you to download many files at once) will help you automate some tedious tasks, while Chrome&#8217;s <a href="https://chrome.google.com/webstore/detail/mbigbapnjcgaffohmbkdlecaccepngjd">Scraper extension</a> was explicitly built to extract tables from web sites. Developer extensions like <a href="http://getfirebug.com/">FireBug</a> (for Firefox, the same thing is already included in Chrome, Safari and IE) let you track exactly how a web site is structured and what communications happen between your browser and the server.</p></div>
+<div class="paragraph"><p><a href="https://scraperwiki.com/">ScraperWiki</a> is a web site that allows you to code scrapers in a number of different programming languages, including Python, Ruby and PHP. If you want to get started with scraping without the hassle of setting up a programming environment on your computer, this is the way to go. Other web services, such as Google Spreadsheets and Yahoo! Pipes also allow you to perform some extraction from other web sites.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_how_does_a_web_scraper_work">How does a web scraper work?</h4>
+<div class="paragraph"><p>Web scrapers are usually small pieces of code written in a programming language such as Python, Ruby or PHP. Choosing the right language is largely a question of which community you have access to: if there is someone in your newsroom or city already working with one of these languages, then it makes sense to adopt the same language.</p></div>
+<div class="paragraph"><p>While some of the click-and-point scraping tools mentioned before may be helpful to get started, the real complexity involved in scraping a web site is in addressing the right pages and the right elements within these pages to extract the desired information. These tasks aren&#8217;t about programming, but understanding the structure of the web site and database.</p></div>
+<div class="paragraph"><p>When displaying a web site, your browser will almost always make use of two technologies: HTTP is a way for it to communicate with the server and to request specific resource, such as documents, images or videos. HTML is the language in which web sites are composed.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_the_anatomy_of_a_web_page">The anatomy of a web page</h4>
+<div class="paragraph"><p>Any HTML page is structured as a hierarchy of boxes (which are defined by HTML &#8220;tags&#8221;). A large box will contain many smaller ones&#8201;&#8212;&#8201;for example a table that has many smaller divisions: rows and cells. There are many types of tags that perform different functions&#8201;&#8212;&#8201;some produce boxes, others tables, images or links. Tags can also have additional properties (e.g. they can be unique identifiers) and can belong to groups called &#8216;classes&#8217;, which makes it possible to target and capture individual elements within a document. Selecting the appropriate elements this way and extracting their content is the key to writing a scraper.</p></div>
+<div class="paragraph"><p>Viewing the elements in a web page: everything can be broken up into boxes within boxes.</p></div>
+<div class="paragraph"><p>To scrape web pages, you&#8217;ll need to learn a bit about the different types of elements that can be in an HTML document. For example, the <span class="monospaced">&lt;table&gt;</span> element wraps a whole table, which has <span class="monospaced">&lt;tr&gt;</span> (table row) elements for its rows, which in turn contain <span class="monospaced">&lt;td&gt;</span> (table data) for each cell. The most common element type you will encounter is <span class="monospaced">&lt;div&gt;</span>, which can basically mean any block of content. The easiest way to get a feel for these elements is by using the <a href="http://skypoetsworld.blogspot.com/2008/01/browser-debugging-tools.html">developer toolbar</a> in your browser: they will allow you to hover over any part of a web page and see what the underlying code is.</p></div>
+<div class="paragraph"><p>Tags work like book ends, marking the start and the end of a unit. For example <span class="monospaced">&lt;em&gt;</span> <em>signifies the start of an italicized or emphasized piece of text and</em> <span class="monospaced">&lt;/em&gt;</span> signifies the end of that section. Easy.</p></div>
+<div class="imageblock" id="FIG045">
+<div class="content">
+<img src="figs/incoming/04-CC.png" alt="figs/incoming/04-CC.png"></div>
+<div class="title">Figure 57. The International Atomic Energy Agency&#8217;s (IAEA) portal (news.iaea.org)</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_an_example_scraping_nuclear_incidents_with_python">An example: scraping nuclear incidents with Python</h4>
+<div class="paragraph"><p><a href="http://www-news.iaea.org/EventList.aspx">NEWS</a> is the International Atomic Energy Agency&#8217;s (IAEA) portal on world-wide radiation incidents (and a strong contender for membership in the Weird Title Club!). The web page lists incidents in a simple, blog-like site that can be easily scraped.</p></div>
+<div class="paragraph"><p>To start, create a new Python scraper on <a href="https://scraperwiki.com/">ScraperWiki</a> and you will be presented with a text area that is mostly empty, except for some scaffolding code. In another browser window, open the <a href="http://www-news.iaea.org/EventList.aspx">IAEA site</a> and open the developer toolbar in your browser. In the &#8220;Elements&#8221; view, try to find the HTML element for one of the news item titles. Your browser&#8217;s developer toolbar helps you connect elements on the web page with the underlying HTML code.</p></div>
+<div class="paragraph"><p>Investigating this page will reveal that the titles are <span class="monospaced">&lt;h4&gt;</span> elements within a <span class="monospaced">&lt;table&gt;</span>. Each event is a <span class="monospaced">&lt;tr&gt;</span> row, which also contains a description and a date. If we want to extract the titles of all events, we should find a way to select each row in the table sequentially, while fetching all the text within the title elements.</p></div>
+<div class="paragraph"><p>In order to turn this process into code, we need to make ourselves aware of all the steps involved. To get a feeling for the kind of steps required, let&#8217;s play a simple game: In your ScraperWiki window, try to write up individual instructions for yourself, for each thing you are going to do while writing this scraper, like steps in a recipe (prefix each line with a hash sign to tell Python that this not real computer code). For example:</p></div>
+<div class="listingblock">
+<div class="content monospaced">
+<pre># Look for all rows in the table
+# Unicorn must not overflow on left side.</pre>
+</div></div>
+<div class="paragraph"><p>Try to be as precise as you can and don&#8217;t assume that the program knows anything about the page you&#8217;re attempting to scrape.</p></div>
+<div class="paragraph"><p>Once you&#8217;ve written down some pseudo-code, let&#8217;s compare this to the essential code for our first scraper:</p></div>
+<div class="listingblock">
+<div class="content monospaced">
+<pre>import scraperwiki
+from lxml import html</pre>
+</div></div>
+<div class="paragraph"><p>In this first section, we&#8217;re importing existing functionality from libraries&#8201;&#8212;&#8201;snippets of pre-written code. <span class="monospaced">scraperwiki</span> will give us the ability to download web sites, while <span class="monospaced">lxml</span> is a tool for the structured analysis of HTML documents. Good news: if you are writing a Python scraper with ScraperWiki, these two lines will always be the same.</p></div>
+<div class="listingblock">
+<div class="content monospaced">
+<pre>url = "http://www-news.iaea.org/EventList.aspx"
+doc_text = scraperwiki.scrape(url)
+doc = html.fromstring(doc_text)</pre>
+</div></div>
+<div class="paragraph"><p>Next, the code makes a name (variable): <span class="monospaced">url</span>, and assigns the URL of the IAEA page as its value. This tells the scraper that this thing exists and we want to pay attention to it. Note that the URL itself is in quotes as it is not part of the program code but a <em>string</em>, a sequence of characters.</p></div>
+<div class="paragraph"><p>We then use the <span class="monospaced">url</span> variable as input to a function, <span class="monospaced">scraperwiki.scrape</span>. A function will provide some defined job&#8201;&#8212;&#8201;in this case it&#8217;ll download a web page. When it&#8217;s finished, it&#8217;ll assign its output to another variable, <span class="monospaced">doc_text</span>. <span class="monospaced">doc_text</span> will now hold the actual text of the website&#8201;&#8212;&#8201;not the visual form you see in your browser, but the source code, including all the tags. Since this form is not very easy to parse, we&#8217;ll use another function, <span class="monospaced">html.fromstring</span>, to generate a special representation where we can easily address elements, the so-called document object model (DOM).</p></div>
+<div class="listingblock">
+<div class="content monospaced">
+<pre>for row in doc.cssselect("#tblEvents tr"):
+link_in_header = row.cssselect("h4 a").pop()
+event_title = link_in_header.text
+print event_title</pre>
+</div></div>
+<div class="paragraph"><p>In this final step, we use the DOM to find each row in our table and extract the event&#8217;s title from its header. Two new concepts are used: the for loop and element selection (<span class="monospaced">.cssselect</span>). The for loop essentially does what its name implies; it will traverse a list of items, assigning each a temporary alias (<span class="monospaced">row</span> in this case) and then run any indented instructions for each item.</p></div>
+<div class="paragraph"><p>The other new concept, element selection, is making use of a special language to find elements in the document. CSS selectors are normally used to add layout information to HTML elements and can be used to precisely pick an element out of a page. In this case (Line. 6) we&#8217;re selecting <span class="monospaced">#tblEvents tr</span> which will match each <span class="monospaced">&lt;tr&gt;</span> within the table element with the ID <span class="monospaced">tblEvents</span> (the hash simply signifies ID). Note that this will return a list of <span class="monospaced">&lt;tr&gt;</span> elements.</p></div>
+<div class="paragraph"><p>As can be seen on the next line (Line. 7), where we&#8217;re applying another selector to find any <span class="monospaced">&lt;a&gt;</span> (which is a hyperlink) within a <span class="monospaced">&lt;h4&gt;</span> (a title). Here we only want to look at a single element (there&#8217;s just one title per row), so we have to <span class="monospaced">pop</span> it off the top of the list returned by our selector with the <span class="monospaced">.pop()</span> function.</p></div>
+<div class="paragraph"><p>Note that some elements in the DOM contain actual text, i.e. text that is not part of any markup language, which we can access using the <span class="monospaced">[element].text</span> syntax seen on line 8. Finally, in line 9, we&#8217;re printing that text to the ScraperWiki console. If you hit run in your scraper, the smaller window should now start listing the event&#8217;s names from the IAEA web site.</p></div>
+<div class="imageblock" id="FIG046">
+<div class="content">
+<img src="figs/incoming/04-DD.png" alt="figs/incoming/04-DD.png"></div>
+<div class="title">Figure 58. A scraper in action (ScraperWiki)</div>
+</div>
+<div class="paragraph"><p>You can now see a basic scraper operating: it downloads the web page, transforms it into the DOM form and then allows you to pick and extract certain content. Given this skeleton, you can try and solve some of the remaining problems using the ScraperWiki and Python documentation:</p></div>
+<div class="ulist"><ul><li>
+<p>
+Can you find the address for the link in each event&#8217;s title?
+</p>
+</li>
+<li>
+<p>
+Can you select the small box that contains the date and place by using its CSS class name and extract the element&#8217;s text?
+</p>
+</li>
+<li>
+<p>
+ScraperWiki offers a small database to each scraper so you can store the results; copy the relevant example from their docs and adapt it so it will save the event titles, links and dates.
+</p>
+</li>
+<li>
+<p>
+The event list has many pages; can you scrape multiple pages to get historic events as well?
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>As you&#8217;re trying to solve these challenges, have a look around ScraperWiki: there are many useful examples in the existing scrapers&#8201;&#8212;&#8201;and quite often, the data is pretty exciting, too. This way, you don&#8217;t need to start off your scraper from scratch: just choose one that is similar, fork it and adapt to your problem.</p></div>
+<div class="paragraph"><p>&#8212; <em>Friedrich Lindenberg, Open Knowledge Foundation</em></p></div>
+</div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="getting_data.html" class="btn">Chapter: Getting Data</a>
+    
+    
+        <a href="getting_data_4.html" class="btn">Next: The Web as a Data Source</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

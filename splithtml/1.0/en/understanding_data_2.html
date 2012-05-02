@@ -1,0 +1,199 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Basic Steps in Working with Data - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="understanding_data_2.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="understanding_data_2.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="understanding_data.html" class="btn">Chapter: Understanding data</a>
+        
+        
+            <a href="understanding_data_3.html" class="btn">Next: The £32 Loaf of Bread</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="Basic Steps in Working with Data #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_basic_steps_in_working_with_data">Basic Steps in Working with Data</h3>
+<div class="paragraph"><p>There are at least three key concepts you need to understand when starting a data project:</p></div>
+<div class="ulist"><ul><li>
+<p>
+Data requests should begin with a list of questions you want to answer.
+</p>
+</li>
+<li>
+<p>
+Data often is messy and needs to be cleaned.
+</p>
+</li>
+<li>
+<p>
+Data may have undocumented features
+</p>
+</li>
+</ul></div>
+<div class="imageblock" id="FIG052">
+<div class="content">
+<img src="figs/incoming/05-MM.png" alt="figs/incoming/05-MM.png"></div>
+<div class="title">Figure 69. Messy Data</div>
+</div>
+<div class="sect3">
+<h4 id="_know_the_questions_you_want_to_answer">Know the Questions You Want to Answer</h4>
+<div class="paragraph"><p>In many ways, working with data is like interviewing a live source. You ask questions of the data and get it to reveal the answers. But just as a source can only give answers about which he or she has information, a data set can only answer questions for which it has the right records and the proper variables. This means that you should consider carefully what questions you need to answer even before you acquire your data. Basically, you work backwards. First, list the data-evidenced statements you want to make in your story. Then decide which variables and records you would have to acquire and analyze in order to make those statements.</p></div>
+<div class="paragraph"><p>Consider an example involving local crime reports. Let&#8217;s say you want to do a story looking at crime patterns in your city, and the statements you want to make involve the times of day and the days of a week in which different kinds of crimes are most likely to happen, as well as what parts of town are hot spots for various crime categories.</p></div>
+<div class="paragraph"><p>You would realize that your data request has to include the date and the time each crime was reported, the kind of crime (murder, theft, burglary, etc.) as well as the address of where the crime occurred. So Date, Time, Crime Category and Address are the minimum variables you need to answer those questions.</p></div>
+<div class="paragraph"><p>But be aware that there are a number of potentially interesting questions that this four-variable data set CAN&#8217;T answer, like the race and gender of victims, or the total value of stolen property, or which officers are most productive in making arrests. Also, you may only be able to get records for a certain time period, like the past three years, which would mean you couldn&#8217;t say anything about whether crime patterns have changed over a longer period of time. Those questions may be outside of the planned purview of your story, and that&#8217;s fine. But you don&#8217;t want to get into your data analysis and suddenly decide you need to know what percentage of crimes in different parts of town are solved by arrest.</p></div>
+<div class="paragraph"><p>One lesson here is that it&#8217;s often a good idea to request ALL the variables and records in the database, rather than the subset that could answer the questions for the immediate story. (In fact, getting all the data can be cheaper than getting a subset, if you have to pay the agency for the programming necessary to write out the subset.) You can always subset the data on your own, and having access to the full data set will let you answer new questions that may come up in your reporting and even produce new ideas for follow-up stories. It may be that confidentiality laws or other policies mean that some variables, such as the identities of victims or the names of confidential informants, can&#8217;t be released. But even a partial database is much better than none, as long as you understand which questions the redacted database can and can&#8217;t answer.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_cleaning_messy_data">Cleaning Messy Data</h4>
+<div class="paragraph"><p>One of the biggest problems in database work is that often you will be using for analysis reasons data that has been gathered for bureaucratic reasons. The problem is that the standard of accuracy for those two is quite different.</p></div>
+<div class="paragraph"><p>For example, a key function of a criminal justice system database is to make sure that defendant Jones is brought from the jail to be in front of Judge Smith at the time of his hearing. For that purpose, it really doesn&#8217;t matter a lot if Jones' birth date is incorrect, or that his street address is misspelled, or even if his middle initial is wrong. Generally, the system still can use this imperfect record to get Jones to Smith&#8217;s courtroom at the appointed time.</p></div>
+<div class="paragraph"><p>But such errors can skew a data journalist&#8217;s attempts to discover the patterns in the database. For that reason, the first big piece of work to undertake when you acquire a new data set is to examine how messy it is and then clean it up. A good quick way to look for messiness is to create frequency tables of the categorical variables, the ones that would be expected to have a relatively small number of different values. (When using Excel, for instance, you can do this by using Filter or Pivot Tables on each categorical variable.)</p></div>
+<div class="paragraph"><p>Take &#8220;Gender&#8221;, an easy example. You may discover that your Gender field includes any of a mix of values like these: Male, Female, M, F, 1, 0, MALE, FEMALE, etc., including misspellings like &#8216;Femal&#8217;. To do a proper gender analysis, you must standardise&#8201;&#8212;&#8201;decide on M and F, perhaps&#8201;&#8212;&#8201;and then change all the variations to match the standards. Another common database with these kinds of problems are American campaign finance records, where the Occupation field might list &#8220;Lawyer&#8221;, &#8220;Attorney&#8221;, &#8220;Atty&#8221;, &#8220;Counsel&#8221;, &#8220;Trial Lawyer&#8221; and any of a wealth of variations and misspellings; again, the trick is to standardise the occupation titles into a shorter list of possibilities.</p></div>
+<div class="paragraph"><p>Data cleanup gets even more problematic when working with names. Are &#8220;Joseph T. Smith&#8221;, &#8220;Joseph Smith&#8221;, &#8220;J.T. Smith&#8221;, &#8220;Jos. Smith&#8221; and &#8220;Joe Smith&#8221; all the same person? It may take looking at other variables like address or date of birth, or even deeper research in other records, to decide. But tools like Google Refine can make the cleanup and standardisation task faster and less tedious.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_data_may_have_undocumented_features">Data May Have Undocumented Features</h4>
+<div class="paragraph"><p>The Rosetta Stone of any database is the so-called data dictionary. Typically, this file (it may be text or PDF or even a spreadsheet) will tell you how the data file is formatted (delimited text, fixed width text, Excel, dBase, et al.), the order of the variables, the names of each variable and the datatype of each variable (text string, integer, decimal, et al.) You will use this information to help you properly import the data file into the analysis software you intend to use (Excel, Access, SPSS, Fusion Tables, any of various flavors of SQL, et al.)</p></div>
+<div class="paragraph"><p>The other key element of a data dictionary is an explanation of any codes being used by particular variables. For instance, Gender may be coded so that &#8216;1=Male&#8217; and &#8216;0=Female&#8217;. Crimes may be coded by your jurisdiction&#8217;s statute numbers for each kind of crime. Hospital treatment records may use any of hundreds of 5-digit codes for the diagnoses of the conditions for which a patient is being treated. Without the data dictionary, these data sets could be difficult or even impossible to analyze properly.</p></div>
+<div class="paragraph"><p>But even with a data dictionary in hand, there can be problems. An example happened to reporters at the Miami Herald in Florida some years ago when they were doing an analysis of the varying rates of punishment that different judges were giving to people arrested for driving while intoxicated. The reporters acquired the conviction records from the court system and analyzed the numbers in the three different punishment variables in the data dictionary: amount of prison time given, amount of jail time given, and amount of fine given. These numbers varied quite a bit amongst the judges, giving the reporters' evidence for a story about how some judges were harsh and some were lenient.</p></div>
+<div class="paragraph"><p>But for every judge, about 1-2 percent of the cases showed no prison time, no jail time and no fine. So the chart showing the sentencing patterns for each judge included a tiny amount of cases as &#8220;No punishment,&#8221; almost as an afterthought. When the story and chart was printed, the judges howled in complaint, saying the Herald was accusing them of breaking a state law that required that anyone convicted of drunk driving be punished.</p></div>
+<div class="paragraph"><p>So the reporters went back to Clerk of the Court&#8217;s office that had produced the data file and asked what had caused this error. They were told that the cases in question involved indigent defendants with first-time arrests. Normally they would be given a fine, but they had no money. So the judges were sentencing them to community service, such as cleaning litter along the roads. As it turned out, the law requiring punishment had been passed after the database structure had been created. So all the court clerks knew that in the data, zeros in each of the prison-jail-fine variables meant community service. However, this WASN&#8217;T noted in the data dictionary, and therefore caused a Herald correction to be written.</p></div>
+<div class="paragraph"><p>The lesson in this case is to always ask the agency giving you data if there are any undocumented elements in the data, whether it is newly-created codes that haven&#8217;t been included in the data dictionary, changes in the file layout, or anything else. Also, always examine the results of your analysis and ask &#8220;Does this make sense?&#8221; The Herald reporters were building the chart on deadline and were so focused on the average punishment levels of each judge that they failed to pay attention to the scant few cases that seemed to show no punishment. They should have asked themselves if it made sense that all the judges seemed to be violating state law, even if only to a tiny degree.</p></div>
+<div class="paragraph"><p>&#8212; <em>Steve Doig,  Walter Cronkite School of Journalism of Arizona State University</em></p></div>
+</div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="understanding_data.html" class="btn">Chapter: Understanding data</a>
+    
+    
+        <a href="understanding_data_3.html" class="btn">Next: The £32 Loaf of Bread</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

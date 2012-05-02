@@ -1,0 +1,187 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>How to Build a News App - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="delivering_data_1.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="delivering_data_1.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="delivering_data.html" class="btn">Chapter: Delivering Data</a>
+        
+        
+            <a href="delivering_data_2.html" class="btn">Next: News Apps at ProPublica</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="How to Build a News App #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_how_to_build_a_news_app">How to Build a News App</h3>
+<div class="imageblock" id="FIG062">
+<div class="content">
+<img src="figs/incoming/06-AA.png" alt="figs/incoming/06-AA.png"></div>
+<div class="title">Figure 82. <em>Dialysis Facility Tracker</em> (ProPublica)</div>
+</div>
+<div class="paragraph"><p>News applications are windows into the data behind a story. They might be searchable databases, sleek visualizations or something else altogether. But no matter what form they take, news apps encourage readers to interact with data in a context that is meaningful to them: looking up crime trends in their area, checking the safety records of their local doctor, or searching political contributions to their candidate of choice.</p></div>
+<div class="paragraph"><p>More than just high-tech infographics, the best news apps are durable products. They live outside the news cycle, often by helping readers solve real-world problems, or answering questions in such a useful or novel way that they become enduring resources. When journalists at ProPublica wanted to explore the safety of American kidney dialysis clinics, they built <a href="http://projects.propublica.org/dialysis/">an application</a> that helped users check whether their hometown facility was safe. Providing such an important and relevant service creates a relationship with users that reaches far beyond what a narrative story can do alone.</p></div>
+<div class="paragraph"><p>Therein lies both the challenge and the promise of building cutting-edge news apps: creating something of lasting value.  Whether you are a developer or a manager, any discussion about how to build a great news app should start with a product development mentality: Keep a laser focus on the user, and work to get the most bang for your buck. So before you start building, it helps to ask yourself three questions:</p></div>
+<div class="sect3">
+<h4 id="_who_is_my_audience_and_what_are_their_needs">Who is my audience and what are their needs?</h4>
+<div class="paragraph"><p>News apps don&#8217;t serve the story for its own sake &#8211; they serve the user. Depending on the project, that user might be a dialysis patient who wants to know about the safety record of her clinic, or even a homeowner unaware of earthquake hazards near his home. No matter who it is, any discussion about building a news app, like any good product, should start with the people who are going to use it.</p></div>
+<div class="paragraph"><p>A single app might serve many users. For instance, a project called <a href="http://curbwise.com/">Curbwise</a>, built by the Omaha (Nebraska) World-Herald serves homeowners who believe they are being overtaxed; curious residents who are interested in nearby property values; and real estate workers trying to keep track of recent sales. In each of those cases, the app meets a specific need that keeps users coming back.</p></div>
+<div class="paragraph"><p>Homeowners, for instance, might need help gathering information on nearby properties so they can argue that their taxes are unfairly high. Pulling together that information is time-consuming and complicated &#8211; a problem Curbwise solves for its users by compiling a <a href="http://curbwise.com/how-to-protest">user-friendly report</a> of all the information they need to challenge their property taxes to local authorities. Curbwise sells that report for $20, and people pay for it because it solves a real problem in their lives.</p></div>
+<div class="paragraph"><p>Whether your app solves a real-world problem like Curbwise or supplements the narrative of a story with an interesting visualization, always be aware of the people who will be using it. And then concentrate on designing and building features based on their needs.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_how_much_time_should_i_spend_on_this">How much time should I spend on this?</h4>
+<div class="paragraph"><p>Developers in the newsroom are like water in the desert: highly sought after and in short supply. Building news apps means balancing the daily needs of a newsroom against the long-term commitments it takes to build truly great products.</p></div>
+<div class="paragraph"><p>Say your editor comes to you with an idea: The City Council is set to have a vote next week about whether to demolish several historic properties in your town. He suggests building a simple application that allows users to see the buildings on a map.</p></div>
+<div class="paragraph"><p>As a developer, you have a few options. You can flex your engineering muscle by building a gorgeous map using custom software. Or you can use existing tools like Google Fusion Tables or open source mapping libraries and finish the job in a couple hours. The first option will give you a better app; but the second might give you more time to build something else with a better chance of having a lasting impact.</p></div>
+<div class="paragraph"><p>Just because a story lends itself to a complex, beautiful news app doesn&#8217;t mean you need to build one. Balancing priorities is critical. The trick is to remember that every app you build comes at a cost: namely, another potentially more impactful app you could have been working on instead.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_how_can_i_take_things_to_the_next_level">How can I take things to the next level?</h4>
+<div class="paragraph"><p>Building high-end news apps can be time-consuming and expensive. That&#8217;s why it always pays to ask about the payoff. How do you elevate a one-hit wonder into something special?</p></div>
+<div class="paragraph"><p>Creating an enduring project that transcends the news cycle is one way. But so is building a tool that saves you time down the road (and open sourcing it!), or applying advanced analytics to your app to learn more about your audience.</p></div>
+<div class="paragraph"><p>Lots of organizations build Census maps to show demographic shifts in their cities. But when the Chicago Tribune news apps team <a href="http://media.apps.chicagotribune.com/chicago-census/less-than-five.html">built theirs</a>, they took things to the next level by developing tools and techniques to build those maps quickly, which they then <a href="http://blog.apps.chicagotribune.com/2011/03/08/making-maps-1/">made available</a> for other organizations to use.</p></div>
+<div class="paragraph"><p>At my employer, the Center for Investigative Reporting, we coupled a simple searchable database with a fine-grained event tracking framework that allowed us to learn, among other things, how much users value serendipity and exploration in our news apps.</p></div>
+<div class="paragraph"><p>At the risk of sounding like a bean-counter, always think about <a href="http://cironline.org/blog/post/beyond-three-ps-few-more-thoughts-business-news-apps">return on investment</a>. Solve a generic problem; create a new way to engage users; open source parts of your work; use analytics to learn more about your users; or even find cases like Curbwise where part of your app might generate revenue.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_wrapping_up">Wrapping up</h4>
+<div class="paragraph"><p>News application development has come a long way in a very short time. News Apps 1.0 were a lot like Infographics 2.0 &#8211; interactive data visualizations, mixed with searchable databases, designed primarily to advance the narrative of the story. Now, many of those apps can be designed by reporters on deadline using open source tools, freeing up developers to think bigger thoughts.</p></div>
+<div class="paragraph"><p>News Apps 2.0, where the industry is headed, is about combining the storytelling and public service strengths of journalism with the product development discipline and expertise of the technology world. The result, no doubt, will be an explosion of innovation around ways to make data relevant, interesting and especially useful to our audience &#8211; and at the same time hopefully helping journalism do the same.</p></div>
+<div class="paragraph"><p>&#8212; <em>Chase Davis, Center for Investigative Reporting</em></p></div>
+</div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="delivering_data.html" class="btn">Chapter: Delivering Data</a>
+    
+    
+        <a href="delivering_data_2.html" class="btn">Next: News Apps at ProPublica</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

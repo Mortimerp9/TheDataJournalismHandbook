@@ -1,0 +1,168 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Mapa76 Hackathon - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="case_studies_7.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="case_studies_7.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+        
+        
+            <a href="case_studies_8.html" class="btn">Next: The Guardian Datablog’s Coverage of the UK Riots</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="Mapa76 Hackathon #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_mapa76_hackathon">Mapa76 Hackathon</h3>
+<div class="imageblock" id="FIG0315">
+<div class="content">
+<img src="figs/incoming/03-MM.png" alt="figs/incoming/03-MM.png"></div>
+<div class="title">Figure 41. <em>Mapa76</em> (Hacks/Hackers Buenos Aires)</div>
+</div>
+<div class="paragraph"><p>We opened the <a href="http://www.meetup.com/HacksHackersBA/">Buenos Aires chapter of Hacks/Hackers</a> in April 2011. We hosted two initial meetups to publicize the idea of greater collaboration between journalists and software developers, with between 120 and 150 people at each event. For a third meeting we had a 30-hour hackathon with eight people at a digital journalism conference in the city of Rosario, 300 kilometers from Buenos Aires.</p></div>
+<div class="paragraph"><p>A recurring theme in these meetings was the desire to scrape large volumes of data from the web, and then to represent it visually. To help with this a project called Mapa76.info was born, which helps users to extract data, and then to display it using maps and timelines. Not an easy task.</p></div>
+<div class="paragraph"><p>Why Mapa76? On March 24, 1976 there was a coup in Argentina, which lasted until 1983. In that period there were an estimated 30,000 disappeared people, thousands of deaths, and 500 children born in captivity appropriated for the military dictatorship. Over 30 years later, the number of people in Argentina convicted of crimes against humanity committed during the dictatorship amounts to 262 people (September 2011). Currently there are 14 ongoing trials and 7 with definite starting dates. There are 802 people in various open court cases.</p></div>
+<div class="paragraph"><p>These prosecutions generate large volumes of data that are difficult for researchers, journalists, human rights organizations, judges, prosecutors, and others to process. Data is produced in a distributed manner and investigators often don&#8217;t take advantage of software tools to assist them with interpreting in. Ultimately this means that facts are often overlooked and hypotheses are often limited. Mapa76 is an investigative tool providing open access to this information for journalistic, legal, juridical, and historical purposes.</p></div>
+<div class="paragraph"><p>To prepare for the hackathon we created a platform which developers and journalists could use to collaborate on the day of the event. Martin Sarsale developed some basic algorithms to extract structured data from simple text documents. Some libraries were also used from DocumentCloud.org project, but not many. The platform would automatically analyze and extract names, dates and places from the texts&#8201;&#8212;&#8201;and would enable users to explore key facts about different cases (e.g. date of birth, place of arrest, alleged place of disappearance and so on).</p></div>
+<div class="paragraph"><p>Our goal was to provide a platform for the automatic extraction of data on the judgments of the military dictatorship in Argentina. We wanted to a way of automatically (or at least semi-automatically) displaying key data related to cases from 1976-1983 based on written evidence, arguments and judgments. The extracted data (names, places and dates) are collected, stored and can be analyzed and refined by the researcher, as well as being explored using maps, timelines and network analysis tools.</p></div>
+<div class="paragraph"><p>The project will allow journalists and investigators, prosecutors and witnesses to follow the story of a person&#8217;s life, including the course of their captivity and subsequent disappearance or release. Where information is absent, users can comb through a vast number of documents for information which could be of possible relevance to the case.</p></div>
+<div class="paragraph"><p>For the hackathon, we made a public announcement through <a href="http://www.meetup.com/HacksHackersBA/">Hacks/Hackers Buenos Aires</a>, which then had around 200 members (at the time of writing there are around 540). We also contacted many Human Rights associations. The meeting was attended by about forty people including journalists, advocacy organizations, developers and designers.</p></div>
+<div class="paragraph"><p>During the hackathon, we identified tasks that different types of participants could pursue independently to help things run smoothly. For example, we asked designers to work on an interface that combining maps and timelines, we asked developers to look into ways of extracting structured data and algorithms to disambiguate names, and we asked journalists to look into what happened with specific people, to compare different versions of stories, and to comb through documents to tell stories about particular cases.</p></div>
+<div class="paragraph"><p>Probably the main problem we had after the hackathon was that our project was very ambitious, our short-term objectives were demanding, and it is hard to coordinate a loose-knit network of volunteers. Nearly everyone involved with the project had a busy day job and many also participated in other events and projects. Hacks/Hackers Buenos Aires had 9 meetings in 2011.</p></div>
+<div class="paragraph"><p>The project is currently under active development. There is a core team of four people working with over a dozen collaborators. We have a <a href="http://groups.google.com/group/mapa76-dev/">public mailing list</a> and <a href="https://github.com/mapa76/">code repository</a> through which anyone can get involved with the project.</p></div>
+<div class="paragraph"><p>&#8212; <em>Mariano Blejman, Hacks/Hackers Buenos Aires</em></p></div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+    
+    
+        <a href="case_studies_8.html" class="btn">Next: The Guardian Datablog’s Coverage of the UK Riots</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,184 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Illinois School Report Cards - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="case_studies_9.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="case_studies_9.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+        
+        
+            <a href="case_studies_10.html" class="btn">Next: Hospital Billing</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="Illinois School Report Cards #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_illinois_school_report_cards">Illinois School Report Cards</h3>
+<div class="imageblock" id="FIG0317">
+<div class="content">
+<img src="figs/incoming/03-EE.png" alt="figs/incoming/03-EE.png"></div>
+<div class="title">Figure 43. <em>2011 Illinois School Report Cards</em> (Chicago Tribune)</div>
+</div>
+<div class="paragraph"><p>Each year, the Illinois State Board of Education releases school "report cards", data on the demographics and performance of all the public schools Illinois. It&#8217;s a massive dataset, this year&#8217;s drop was ~9,500 <em>columns</em> wide. The problem with that much data is choosing what to present. (As with any software project, the hard part is not <em>building</em> the software, but building the <em>right</em> software.)</p></div>
+<div class="paragraph"><p>We worked with the reporters and editor from the education team to choose the interesting data. (There&#8217;s a lot of data out there that seems interesting but which a reporter will tell you is actually flawed or misleading.)</p></div>
+<div class="paragraph"><p>We also surveyed and interviewed folks with school-age kids in our newsroom. We did this because of an empathy gap&#8201;&#8212;&#8201;nobody on the news apps team has school-age kids. Along the way, we learned much about our users and much about the usability (or lack thereof!) of the previous version of our schools site.</p></div>
+<div class="paragraph"><p>We aimed to design for a couple specific users and use cases: (1) parents with a child in school who want to know how their school measures up, and (2) parents who&#8217;re trying to sort out where to live, since school quality often has a major impact on that decision.</p></div>
+<div class="paragraph"><p>The first time around, the schools site was about a six week, two developer project. Our 2011 update was a four week, two developer project. (There were actually three people actively working on the recent project, but none were full-time, so it adds up to about two.)</p></div>
+<div class="paragraph"><p>A key piece of this project was information design. Although we present far less data than is available, it&#8217;s still a <em>lot</em> of data, and making it digestible was a challenge. Luckily, we got to borrow someone from our graphics desk&#8201;&#8212;&#8201;a designer who specialises in presenting complicated information. He taught us much about chart design and, in general, guided us to a presentation that is readable, but does not underestimate the reader&#8217;s ability or desire to understand the numbers.</p></div>
+<div class="paragraph"><p>The site was built in Python and Django. The data is housed in MongoDB&#8201;&#8212;&#8201;the schools data is heterogeneous and hierarchical, making it a poor fit for a relational database. (Otherwise we probably would have used PostgreSQL.)</p></div>
+<div class="paragraph"><p>We experimented for the first time with Twitter&#8217;s Bootstrap user interface framework on this project, and were happy with the results. The charts are drawn with Flot.</p></div>
+<div class="paragraph"><p>The app is also home to the many stories about school performance that we&#8217;ve written. It acts as sort of a portal in that way&#8201;&#8212;&#8201;when there&#8217;s a new school performance story, we put it at the top of the app, alongside lists of schools relevant to the story. (And when a new story hits, readers of chicagotribune.com are directed to the app, not the story.)</p></div>
+<div class="paragraph"><p>Early reports are that readers love the schools app. The feedback we&#8217;ve received has been largely positive (or at least constructive!), and page views are through the roof. As a bonus, this data will remain interesting for a full year, so although we expect the hits to tail off as the schools stories fade from the homepage, our past experience is that readers have sought out this application year-round.</p></div>
+<div class="paragraph"><p>A few key ideas we took away from this project are:</p></div>
+<div class="ulist"><ul><li>
+<p>
+The graphics desk is your friend. They&#8217;re good at making complex information digestible.
+</p>
+</li>
+<li>
+<p>
+Ask the newsroom for help. This is the second project for which we&#8217;ve conducted a newsroom-wide survey and interviews, and it&#8217;s a great way to get the opinion of thoughtful people who, like our audience, are diverse in background and generally uncomfortable with computers.
+</p>
+</li>
+<li>
+<p>
+Show your work! Much of our feedback has been requests for the data that the application. We&#8217;ve made a lot of the data publicly available via an API, and we will shortly release the stuff that we didn&#8217;t think to include initially.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>&#8212; <em>Brian Boyer, Chicago Tribune</em></p></div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+    
+    
+        <a href="case_studies_10.html" class="btn">Next: Hospital Billing</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

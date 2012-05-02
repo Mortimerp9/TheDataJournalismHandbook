@@ -1,0 +1,218 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Crowdsourcing the Price of Water - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="case_studies_17.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+          
+          <a class="btn btn-inverse" data-toggle="modal" href="case_studies_17.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+        
+        
+            <a href="getting_data.html" class="btn">Next: Getting Data</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="Crowdsourcing the Price of Water #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_crowdsourcing_the_price_of_water">Crowdsourcing the Price of Water</h3>
+<div class="paragraph"><p>Since March 2011 information about the price of tap water throughout France is gathered through a crowdsourcing experiment. In just 4 months, over 5,000 people fed up with corporate control of the water market took the time to look for their water utility bill, scan it and upload it on <a href="http://www.prixdeleau.fr/">Prix de l&#8217;Eau</a> (&#8216;price of water&#8217;) project. The result is an unprecedented investigation that brought together geeks, NGO and traditional media to improve transparency around water projects.</p></div>
+<div class="paragraph"><p>The French water utility market consists in over 10,000 customers (cities buying water to distribute to their taxpayers) and just a handful of utility companies. The balance of power on this oligopoly is distorted in favor of the corporations, which sometimes charge different prices to neighboring towns!</p></div>
+<div class="imageblock" id="FIG0327">
+<div class="content">
+<img src="figs/incoming/03-WW.jpg" alt="figs/incoming/03-WW.jpg"></div>
+<div class="title">Figure 53. <em>The Price of Water</em> (Fondation France Libert&#233;)</div>
+</div>
+<div class="paragraph"><p>The French NGO France Libert&#233;s has been dealing with water issues worldwide for the past 25 years. It now focuses on improving transparency on the French market and empowering citizens and mayors, who negotiate water utility deals. The French government decided to tackle the problem 2 years ago with a nationwide census of water price and quality. So far, only 3% of the data has been collected. To go faster, <a href="http://www.france-libertes.org/">France Libert&#233;s</a> wanted to get citizens directly involved.</p></div>
+<div class="paragraph"><p>Together with the OWNI team, I designed a crowdsourcing interface where users would scan their water utility bill and enter the price they paid for tap water on <a href="http://www.prixdeleau.fr/">prixdeleau.fr</a> (price of water). In the past 4 months, 8,500 signed up and over 5,000 bills have been uploaded and validated.</p></div>
+<div class="paragraph"><p>While this does not allow for a perfect assessment of the market situation, it showed stakeholders such as national water overseeing bodies that there was a genuine, grassroots concern about the price of tap water. They were skeptical at first about transparency, but changed their minds over the course of the operation, progressively joining France Libert&#233;s in its fight against opacity and corporate malpractice. What can media organizations learn from this?</p></div>
+<div class="dlist"><dl><dt class="hdlist1">
+Partner with NGOs
+</dt>
+<dd>
+<p>
+  NGOs need large amount of data to design policy papers. They will be more willing to pay for a data collection operation than a newspaper executive.
+</p>
+</dd>
+<dt class="hdlist1">
+Users can provide raw data
+</dt>
+<dd>
+<p>
+  Crowdsourcing works best when users do a data collection or data refining task.
+</p>
+</dd>
+<dt class="hdlist1">
+Ask for the source
+</dt>
+<dd>
+<p>
+  We pondered whether to ask users for a scan of the original bill, thinking it would deter some of them (especially as our target audience was older than average). While it might have put off some, it increased the credibility of the data.
+</p>
+</dd>
+<dt class="hdlist1">
+Set up a validation mechanism
+</dt>
+<dd>
+<p>
+  We designed a point system and a <a href="http://www.prixdeleau.fr/valider">peer-review mechanism</a> to vet user contributions. This proved too convoluted for users, who had little incentive to make repeated visits to the website. It was used by the France Libert&#233;s team, however, whose 10 or so employees did feel motivated by the points system.
+</p>
+</dd>
+<dt class="hdlist1">
+Keep it simple
+</dt>
+<dd>
+<p>
+  We built an automated mailing mechanism so that users could file a Freedom of Information request regarding water pricing in just a few clicks. Though innovative and well-designed, this feature did not provide substantial ROI (only 100 requests have been sent).
+</p>
+</dd>
+<dt class="hdlist1">
+Target your audience
+</dt>
+<dd>
+<p>
+  France Libert&#233;s partnered with consumers' rights news magazine <em>60 Millions de Consommateurs</em>, who got their community involved in a big way. It was the perfect match for such an operation.
+</p>
+</dd>
+<dt class="hdlist1">
+Choose your key performance indicators carefully
+</dt>
+<dd>
+<p>
+  The project gathered only 45,000 visitors in 4 months, equivalent to 15 minutes worth of traffic on <a href="http://www.nytimes.com/">nytimes.com</a>. What&#8217;s really important is that 1 in 5 signed up and 1 in 10 took the time to scan and upload his or her utility bill.
+</p>
+</dd>
+</dl></div>
+<div class="paragraph"><p>&#8212; <em>Nicolas Kayser-Bril, Journalism++</em></p></div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+    
+    
+        <a href="getting_data.html" class="btn">Next: Getting Data</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+  <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

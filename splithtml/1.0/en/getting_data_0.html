@@ -1,0 +1,253 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>A Five Minute Field Guide - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="getting_data_0.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="getting_data_0.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="getting_data.html" class="btn">Chapter: Getting Data</a>
+        
+        
+            <a href="getting_data_1.html" class="btn">Next: Your Right to Data</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="A Five Minute Field Guide #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_a_five_minute_field_guide">A Five Minute Field Guide</h3>
+<div class="imageblock" id="FIG042">
+<div class="content">
+<img src="figs/incoming/04-01.png" alt="figs/incoming/04-01.png"></div>
+<div class="title">Figure 54. <em>datacatalogs.org</em> (Open Knowledge Foundation)</div>
+</div>
+<div class="paragraph"><p>Looking for data on a particular topic or issue? Not sure what exists or where to find it? Don&#8217;t know where to start? In this section we look at how to get started with finding public data sources on the web.</p></div>
+<div class="sect3">
+<h4 id="_streamlining_your_search">Streamlining Your Search</h4>
+<div class="paragraph"><p>While they may not always be easy to find, many databases on the web are indexed by search engines, whether the publisher intended this or not. Here are a few tips:</p></div>
+<div class="ulist"><ul><li>
+<p>
+When searching for data, make sure that you include both search terms relating to the content of the data you&#8217;re trying to find as well as some information on the format or source that you would expect it to be in. Google and other search engines allow you to search by file type. For example, you can look only for spreadsheets (by appending your search with &#8216;filetype:XLS filetype:CSV&#8217;), geodata (&#8216;filetype:shp&#8217;), or database extracts (&#8216;filetype:MDB, filetype:SQL, filetype:DB&#8217;). If you&#8217;re so inclined, you can even look for PDFs (&#8216;filetype:pdf&#8217;).
+</p>
+</li>
+<li>
+<p>
+You can also search by part of a URL. Googling for &#8216;inurl:downloads filetype:xls&#8217; will try to find all Excel files that have &#8220;downloads&#8221; in their web address (if you find a single download, it&#8217;s often worth just checking what other results exist for the same folder on the web server). You can also limit your search to only those results on a single domain name, by searching for, e.g. &#8216;site:agency.gov&#8217;.
+</p>
+</li>
+<li>
+<p>
+Another popular trick is not to search for content directly, but for places where bulk data may be available. For example, &#8216;site:agency.gov Directory Listing&#8217; may give you some listings generated by the web server with easy access to raw files, while &#8216;site:agency.gov Database Download&#8217; will look for intentionally created listings.
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_browse_data_sites_and_services">Browse data sites and services</h4>
+<div class="paragraph"><p>Over the last few years a number of dedicated data portals, data hubs and other data sites have appeared on the web. These are a good place to get acquainted with the kinds of data that is out there. For starters you might like to take a look at:</p></div>
+<div class="ulist"><ul><li>
+<p>
+Official data portals. The government&#8217;s willingness to release a given dataset will vary from country to country. A growing number of countries are launching data portals (inspired by the U.S.'s data.gov and the U.K.'s data.gov.uk) to promote the civic and commercial re-use of government information. An up-to-date, global index of such sites can be found at <a href="http://datacatalogs.org/">datacatalogs.org</a>. Another handy site is the <a href="http://www.guardian.co.uk/world-government-data">Guardian World Government Data</a>, a meta search engine that includes many international government data catalogues.
+</p>
+</li>
+<li>
+<p>
+<a href="http://thedatahub.org/">The Data Hub</a>. A community-driven resource run by the Open Knowledge Foundation that makes it easy to find, share and reuse openly available sources of data, especially in ways that are machine-automated.
+</p>
+</li>
+<li>
+<p>
+<a href="https://scraperwiki.com/">ScraperWiki</a>. an online tool to make the process of extracting "useful bits of data easier so they can be reused in other apps, or rummaged through by journalists and researchers." Most of the scrapers and their databases are public and can be re-used.
+</p>
+</li>
+<li>
+<p>
+The <a href="http://data.worldbank.org/">World Bank</a> and <a href="http://data.un.org/">United Nations</a> data portals provide high-level indicators for all countries, often for many years in the past.
+</p>
+</li>
+<li>
+<p>
+A number of startups are emerging, that aim to build communities around data sharing and re-sale. This includes <a href="http://buzzdata.com/">Buzzdata</a>&#8201;&#8212;&#8201;a place to share and collaborate on private and public datasets&#8201;&#8212;&#8201;and data shops such as <a href="http://www.infochimps.com/">Infochimps</a> and <a href="http://datamarket.com/">DataMarket</a>.
+</p>
+</li>
+<li>
+<p>
+<a href="http://datacouch.com/">DataCouch</a>&#8201;&#8212;&#8201;A place to upload, refine, share &amp; visualize your data.
+</p>
+</li>
+<li>
+<p>
+An interesting Google subsidiary, <a href="http://www.freebase.com/">Freebase</a>, provides "an entity graph of people, places and things, built by a community that loves open data."
+</p>
+</li>
+<li>
+<p>
+Research data. There are numerous national and disciplinary aggregators of research data, such as the <a href="http://www.data-archive.ac.uk/">UK Data Archive</a>. While there will be lots of data that is free at the point of access, there will also be much data that requires a subscription, or which cannot be reused or redistributed without asking permission first.
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_ask_a_forum">Ask a Forum</h4>
+<div class="paragraph"><p>Search for existing answers or ask a question at <a href="http://getthedata.org/">Get The Data</a> or on <a href="http://www.quora.com/">Quora</a>. GetTheData is Q&amp;A site where you can ask your data related questions, including where to find data relating to a particular issue, how to query or retrieve a particular data source, what tools to use to explore a data set in a visual way, how to cleanse data or get it into a format you can work with.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_ask_a_mailing_list">Ask a Mailing List</h4>
+<div class="paragraph"><p>Mailing lists combine the wisdom of a whole community on a particular topic. For data journalists, the  <a href="http://lists.okfn.org/mailman/listinfo/data-driven-journalism">Data Driven Journalism List</a> and the <a href="http://www.ire.org/membership/subscribe/nicar-l.html/">NICAR-L</a> lists are  excellent starting points. Both of these lists are filled with data journalists and Computer Assisted Reporting (CAR) geeks, who work on all kinds of projects. Chances are that someone may have done a story like yours, and may have an idea of where to start, if not a link to the data itself. You could also try <a href="http://project-wombat.org/">Project Wombat</a> (&#8220;a discussion list for difficult reference questions&#8221;), the <a href="http://wiki.okfn.org/Mailing_Lists">Open Knowledge Foundation&#8217;s many mailing lists</a>, mailing lists at <a href="http://theinfo.org/">theInfo</a>, or searching for mailing lists on the topic, or in the region that you are interested in.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_join_hacks_hackers">Join Hacks/Hackers</h4>
+<div class="paragraph"><p><a href="http://hackshackers.com/">Hacks/Hackers</a> is a rapidly expanding international grassroots journalism organization with dozens of chapters and thousands of members across four continents. Its mission is to create a network of journalists ("hacks") and technologists ("hackers") who rethink the future of news and information. With such a broad network&#8201;&#8212;&#8201;you stand a strong chance of someone knowing where to look for the thing you seek.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_ask_an_expert">Ask an Expert</h4>
+<div class="paragraph"><p>Professors, public servants and industry folks often know where to look. Call them. Email them. Accost them at events. Show up at their office. Ask nicely. &#8220;I&#8217;m doing a story on X. Where would I find this? Do you know who has this?&#8221;</p></div>
+</div>
+<div class="sect3">
+<h4 id="_learn_about_government_it">Learn About Government IT</h4>
+<div class="paragraph"><p>Understanding the technical and administrative context in which governments maintain their information is often helpful when trying to access data. Whether it&#8217;s CORDIS, COINS or THOMAS&#8201;&#8212;&#8201;big-acronym databases often become most useful once you understand a bit about their intended purpose.</p></div>
+<div class="paragraph"><p>Find government organizational charts and look for departments/units with a cross-cutting function (e.g. reporting, IT services), then explore their web sites. A lot of data is kept in multiple departments and while for one, a particular database may be their crown jewels, another may give it to you freely.</p></div>
+<div class="paragraph"><p>Look out for dynamic infographics on government sites. These are often powered by structured data sources/APIs that can be used independently (e.g. flight tracking applets, weather forecast java apps).</p></div>
+</div>
+<div class="sect3">
+<h4 id="_search_again_using_phrases_and_improbable_sets_of_words_you_8217_ve_spotted_since_last_time">Search again using phrases and improbable sets of words you&#8217;ve spotted since last time</h4>
+<div class="paragraph"><p>When you know more about what you are looking for, you may have a bit more luck with search engines!</p></div>
+</div>
+<div class="sect3">
+<h4 id="_write_an_foi_request">Write an FOI Request</h4>
+<div class="paragraph"><p>If you believe that a government body has the data you need, a Freedom of Information request may be your best tool. See below for more information on how to file one.</p></div>
+<div class="paragraph"><p>&#8212; <em>Brian Boyer (Chicago Tribune), John Keefe (WNYC), Friedrich Lindenberg (Open Knowledge Foundation), Jane Park (Creative Commons), Chrys Wu (Hacks/Hackers)</em></p></div>
+</div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="getting_data.html" class="btn">Chapter: Getting Data</a>
+    
+    
+        <a href="getting_data_1.html" class="btn">Next: Your Right to Data</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

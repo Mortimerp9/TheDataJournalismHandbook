@@ -1,0 +1,170 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>The Opportunity Gap - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="case_studies_0.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="case_studies_0.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+        
+        
+            <a href="case_studies_1.html" class="btn">Next: A 9 Month Investigation into European Structural Funds</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="The Opportunity Gap #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_the_opportunity_gap">The Opportunity Gap</h3>
+<div class="imageblock" id="FIG031">
+<div class="content">
+<img src="figs/incoming/03-YY.png" alt="figs/incoming/03-YY.png"></div>
+<div class="title">Figure 27. <em>The Opportunity Gap project</em> (ProPublica)</div>
+</div>
+<div class="paragraph"><p><a href="http://projects.propublica.org/schools">The Opportunity Gap</a> used never-before-released U.S. Department of Education civil rights data and showed that some states, like Florida, have levelled the field and offer rich and poor students roughly equal access to high-level courses, while other states, like Kansas, Maryland and Oklahoma offer less opportunity in districts with poorer families.</p></div>
+<div class="paragraph"><p>The data included every public school in a district with 3,000 students or more. More than three-quarters of all public-school children were represented. A reporter in our newsroom obtained the data and our Computer Assisted Reporting Director cleaned it very extensively.</p></div>
+<div class="paragraph"><p>It was roughly a three-month project. Altogether, six people worked on the story and news application: two editors, a reporter, a CAR person, and two developers. Most of us weren&#8217;t all working on it exclusively throughout that period.</p></div>
+<div class="paragraph"><p>The project really required our combined skills&#8201;&#8212;&#8201;deep domain knowledge, an understanding of data best practices, design and coding skills, and so on. More importantly it required an ability to find the story in the data. It also took editing, not only for the story that went with it, but for the news app itself.</p></div>
+<div class="paragraph"><p>For the data cleaning and analysis we used mostly Excel and cleaning scripts, as well as MS Access. The news app was written in Ruby on Rails and uses JavaScript pretty extensively.</p></div>
+<div class="paragraph"><p>In addition to an overview story, our coverage included an interactive news application, which let readers understand and find examples within this large national data set that related to them. Using our news app, a reader could find their local school&#8201;&#8212;&#8201;say, for example, <a href="http://goo.gl/HJVCf">Central High School in Newark, N.J.</a>&#8201;&#8212;&#8201;and immediately see how well the school does in a wide variety of areas. Then they could hit a button that says <a href="http://goo.gl/WrAIi">&#8216;Compare to High and Low Poverty Schools&#8217;</a>, and immediately see other high schools, their relative poverty, and the extent to which they offer higher math, Advanced Placement, and other important courses. In our example, Central High is bookended by Millburn Sr. High. The Opportunity Gap shows how only 1% of Milburn students get Free or Reduced Price lunch but 72% of them are taking at least one AP course. In the other extreme, International High has 85% of its students getting Free/Reduced Price lunch and only 1% taking AP courses.</p></div>
+<div class="paragraph"><p>Through this example a reader can use something they know&#8201;&#8212;&#8201;a local high school&#8201;&#8212;&#8201;to understand something they don&#8217;t know&#8201;&#8212;&#8201;the distribution of educational access, and the extent to which poverty is a predictor of that access.</p></div>
+<div class="paragraph"><p>We also integrated the app with Facebook, so readers could log in to Facebook and our app would automatically let them know about schools that might interest them.</p></div>
+<div class="paragraph"><p>Traffic to all of our news apps are excellent, and we&#8217;re particularly proud of the way this app tells a complex story&#8201;&#8212;&#8201;and more to the point, helps readers tell their own particular story for themselves.</p></div>
+<div class="paragraph"><p>As with many projects that start with government data, the data needed a lot of cleaning. For instance, while there are only around 30 possible Advanced Placement courses, some schools reported having hundreds of them. This took lots of manual checking and phone calls to schools for confirmation and corrections.</p></div>
+<div class="paragraph"><p>We also worked really hard at making sure the app told a &#8220;far&#8221; story and a &#8220;near&#8221; story. That is, the app needed to present the reader with a broad, abstract national picture&#8201;&#8212;&#8201;specifically, a way to compare how states did relative to each other on educational access. But given that abstraction sometimes leaves readers confused as to what the data means to them, we also wanted readers to be able to find their own local school and compare it to high and low-poverty schools in their area.</p></div>
+<div class="paragraph"><p>If I were to advise aspiring data journalists interested in taking on this kind of project, I&#8217;d say you have to know the material and be inquisitive! All of the rules that apply to other kinds of journalism apply here. You have to get the facts right, make sure you tell the story well, and crucially, make sure your news app doesn&#8217;t disagree with a story you&#8217;re writing&#8201;&#8212;&#8201;because if it does, one of the two might be wrong.</p></div>
+<div class="paragraph"><p>Also, if you want to learn to code, the most important thing is to start. You might like learning through classes or through books or videos&#8201;&#8212;&#8201;and all are available and quite good&#8201;&#8212;&#8201;but make sure you have a really good idea for a project and a deadline by which you&#8217;ve got to complete it. If there&#8217;s a story in your head that can only come out as a news app, then not knowing how to program won&#8217;t stop you!</p></div>
+<div class="paragraph"><p>&#8212; <em>Scott Klein, ProPublica</em></p></div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+    
+    
+        <a href="case_studies_1.html" class="btn">Next: A 9 Month Investigation into European Structural Funds</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

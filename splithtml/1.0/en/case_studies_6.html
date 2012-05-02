@@ -1,0 +1,223 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Data in the News - Wikileaks - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="case_studies_6.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="case_studies_6.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+        
+        
+            <a href="case_studies_7.html" class="btn">Next: Mapa76 Hackathon</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="Data in the News: Wikileaks #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_data_in_the_news_wikileaks">Data in the News: Wikileaks</h3>
+<div class="imageblock" id="FIG0314">
+<div class="content">
+<img src="figs/incoming/03-GG.jpg" alt="figs/incoming/03-GG.jpg"></div>
+<div class="title">Figure 40. <em>The Wikileaks War Logs</em> (The Guardian)</div>
+</div>
+<div class="paragraph"><p>It began with one of the investigative reporting team asking: &#8220;You&#8217;re good with spreadsheets, aren&#8217;t you?&#8221; And this was one hell of a spreadsheet: 92,201 rows of data, each one containing a detailed breakdown of a military event in Afghanistan. This was the <a href="http://www.guardian.co.uk/news/datablog+world/the-war-logs">WikiLeaks war logs</a>. Part one, that is. There were to be two more episodes to follow: Iraq and the cables. The official term was SIGACTS: the US military significant actions database.</p></div>
+<div class="paragraph"><p>The Afghanistan war logs&#8201;&#8212;&#8201;shared with the New York Times and Der Spiegel&#8201;&#8212;&#8201;was data journalism in action. What we wanted to do was enable our team of specialist reporters to get great human stories from the information&#8201;&#8212;&#8201;and we wanted to analyze it to get the big picture, to show how the war really is going.</p></div>
+<div class="paragraph"><p>It was central to what we would do quite early on that we would not publish the full database. Wikileaks was already going to do that and we wanted to make sure that we didn&#8217;t reveal the names of informants or unnecessarily endanger Nato troops. At the same time, we needed to make the data easier to use for our team of investigative reporters led by David Leigh and Nick Davies (who had negotiated releasing the data with Julian Assange). We also wanted to make it simpler to access key information, out there in the real world&#8201;&#8212;&#8201;as clear and open as we could make it.</p></div>
+<div class="paragraph"><p>The data came to us as a huge excel file&#8201;&#8212;&#8201;over 92,201 rows of data, some with nothing in at all or poorly formatted. It didn&#8217;t help reporters trying to trawl through the data for stories and was too big to run meaningful reports on.</p></div>
+<div class="paragraph"><p>Our team built a simple internal database using SQL. Reporters could now search stories for key words or events. Suddenly the dataset became accessible and generating stories became easier.</p></div>
+<div class="paragraph"><p>The data was well structured: each event had the following key data: time, date, a description, casualty figures and&#8201;&#8212;&#8201;crucially&#8201;&#8212;&#8201;detailed latitude and longitude.</p></div>
+<div class="paragraph"><p>We also started filtering the data to help us tell one of the key stories of the war: the rise in IED (improvised explosive device) attacks&#8201;&#8212;&#8201;home-made roadside bombs which are unpredictable and difficult to fight. This dataset was still massive&#8201;&#8212;&#8201;but easier to manage. There were around 7,500 IED explosions or ambushes (an ambush is where the attack is combined with, for example, small arms fire or rocket grenades) between 2004 and 2009. There were another 8,000 IEDs which were found and cleared. We wanted to see how they changed over time&#8201;&#8212;&#8201;and how they compared. This data allowed us to see that the south, where British and Canadian troops were based then, was the worst-hit area&#8201;&#8212;&#8201;which backed-up what our reporters who had covered the war knew.</p></div>
+<div class="paragraph"><p>The Iraq war logs release in October 2010 dumped another 391,000 records of the Iraq war into the public arena.</p></div>
+<div class="paragraph"><p>This was in a different league to the Afghanistan leak&#8201;&#8212;&#8201;there&#8217;s a good case for saying this made the war the most documented in history. Every minor detail was now there for us to analyze and break down. But one factor stands out: the sheer volume of deaths, most of which are civilians.</p></div>
+<div class="paragraph"><p>As with Afghanistan, the Guardian decided not to republish the entire database, largely because we couldn&#8217;t be sure the summary field didn&#8217;t contain confidential details of informants and so on.</p></div>
+<div class="paragraph"><p>But we did allow our users to download a spreadsheet containing the records of every incident where somebody died, nearly 60,000 in all. We removed the summary field so it was just the basic data: the military heading, numbers of deaths and the geographic breakdown.</p></div>
+<div class="paragraph"><p>We also took all these incidents where someone had died and <a href="http://www.guardian.co.uk/world/datablog/interactive/2010/oct/23/wikileaks-iraq-deaths-map">put it on a map using Google Fusion tables</a>. It was not perfect, but a start in trying to map the patterns of destruction which had ravaged Iraq.</p></div>
+<div class="paragraph"><p>December 2010 saw the release of the cables. This was in another league altogether, a huge dataset of official documents: 251,287 dispatches, from more than 250 worldwide US embassies and consulates. It&#8217;s a unique picture of US diplomatic language&#8201;&#8212;&#8201;including over 50,000 documents covering the current Obama administration. But what did the data include?</p></div>
+<div class="paragraph"><p>The cables themselves came via the huge Secret Internet Protocol Router Network, or SIPRNet. SIPRNet is the worldwide US military internet system, kept separate from the ordinary civilian internet and run by the Department of Defense in Washington. Since
+the attacks of September 2001, there had been a move in the US to link up archives of government information, in the hope that key intelligence no longer gets trapped in information silos or &#8220;stovepipes&#8221;. An increasing number of US embassies have become linked to SIPRNet over the past decade, so that military and diplomatic information can be shared. By 2002, 125 embassies were on SIPRNet: by 2005, the number had risen to 180, and by now the vast majority of US missions worldwide are linked to the system&#8201;&#8212;&#8201;which is why the bulk of these cables are from 2008 and 2009. As David Leigh wrote:</p></div>
+<div class="quoteblock">
+<div class="content">
+<div class="paragraph"><p>An embassy dispatch marked SIPDIS is automatically downloaded on to its embassy classified website. From there, it can be accessed not only by anyone in the state department, but also by anyone in the US military who has a security clearance up to the &#8216;Secret&#8217; level, a password, and a computer connected to SIPRNet</p></div>
+</div>
+<div class="attribution">
+</div></div>
+<div class="paragraph"><p>&#8230;which astonishingly covers over 3 million people. There are several layers of data in here; all the way up to <em>SECRET NOFORN</em>, which means that they are designed never be shown to non-US citizens. Instead, they are supposed to be read by officials in Washington up to the level of Secretary of State Hillary Clinton. The cables are normally drafted by the local ambassador or subordinates. The &#8220;Top Secret&#8221; and above foreign intelligence documents cannot be accessed from SIPRNet.</p></div>
+<div class="paragraph"><p>Unlike the previous releases, this was predominantly text, not quantified or with identical data. This is what was included:</p></div>
+<div class="dlist"><dl><dt class="hdlist1">
+A source
+</dt>
+<dd>
+<p>
+  The embassy or body which sent it
+</p>
+</dd>
+<dt class="hdlist1">
+A list of recipients
+</dt>
+<dd>
+<p>
+  Normally cables were sent to a number of other embassies and bodies
+</p>
+</dd>
+<dt class="hdlist1">
+A subject field
+</dt>
+<dd>
+<p>
+  Basically a summary of the cable
+</p>
+</dd>
+<dt class="hdlist1">
+Tags
+</dt>
+<dd>
+<p>
+  Each cable was tagged with a number of keyword abbreviations.
+</p>
+</dd>
+<dt class="hdlist1">
+Body text
+</dt>
+<dd>
+<p>
+  The cable itself. We opted not to publish these in full for obvious security reasons
+</p>
+</dd>
+</dl></div>
+<div class="paragraph"><p>One interesting nuance of this story is how the cables have almost created leaks on demand. They led the news for weeks on being published&#8201;&#8212;&#8201;but now, whenever a story comes up about some corrupt regime or international scandal, access to the cables gives us access to new stories.</p></div>
+<div class="paragraph"><p>Analysis of the cables is an enormous task which may never be entirely finished.</p></div>
+<div class="paragraph"><p>&#8212; <em>This is an edited version of a chapter first published in Facts are Sacred: the power of data by Simon Rogers, The Guardian</em></p></div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+    
+    
+        <a href="case_studies_7.html" class="btn">Next: Mapa76 Hackathon</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

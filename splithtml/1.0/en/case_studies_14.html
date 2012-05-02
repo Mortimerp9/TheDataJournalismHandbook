@@ -1,0 +1,208 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Bus Subsidies in Argentina - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="case_studies_14.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="case_studies_14.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+        
+        
+            <a href="case_studies_15.html" class="btn">Next: Citizen Data Reporters</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="Bus Subsidies in Argentina #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_bus_subsidies_in_argentina">Bus Subsidies in Argentina</h3>
+<div class="paragraph"><p>Since 2002 subsidies for the public bus transportation system in Argentina have been growing exponentially, breaking a new record every year. But in 2011, after winning the elections, Argentina&#180;s new government announced cuts in subsidies for public services starting December of the same year. At the same time the national government decided to transfer to the City of Buenos Aires government the administration of the local bus lines and metro lines. As the transfer of subsidies to this local government hasn&#8217;t been clarified and due to lack of sufficient local funds to guarantee the safety of the transportation system, the government of the City of Buenos Aires rejected this decision.</p></div>
+<div class="paragraph"><p>As this was happening my colleagues at La Naci&#243;n and I were meeting for the first time to discuss how to start our own data journalism operation. Our Financial Section Editor suggested that the subsidies data published by the <a href="http://www.transporte.gov.ar/">Secretar&#237;a de Transporte</a> (the Department of Transportation) would be a good challenge to start with as it was very difficult to make sense of due to the format and the terminology.</p></div>
+<div class="paragraph"><p>The poor conditions of the public transportation system impact the life of more than 5.800.000 passengers everyday. Delays, strikes, vehicle breakdowns or even accidents are often happening. We thus decided to look into where the subsidies for the public transportation system in Argentina go and make this data easily accessible to all Argentinian citizens by means of a &#8220;Transport Subsidies Explorer&#8221;, which is currently in the making.</p></div>
+<div class="imageblock" id="FIG0322">
+<div class="content">
+<img src="figs/incoming/03-LL-01.jpg" alt="figs/incoming/03-LL-01.jpg"></div>
+<div class="title">Figure 48. The <em>Transport Subsidies Explorer</em> (La Naci&#243;n)</div>
+</div>
+<div class="paragraph"><p>We started with calculating how much bus companies receive every month from the government. To do this we look at the data published on the <a href="http://www.transporte.gov.ar/content/subsidios-sistau/">website of the Department of Transportation</a> where more than 400 PDFs containing monthly cash payments towards more than 1300 companies since 2006 were published.</p></div>
+<div class="imageblock" id="FIG0323">
+<div class="content">
+<img src="figs/incoming/03-LL-02.jpg" alt="figs/incoming/03-LL-02.jpg"></div>
+<div class="title">Figure 49. Ranking subsidised transport companies (La Naci&#243;n)</div>
+</div>
+<div class="paragraph"><p>We teamed up with a senior programmer to develop a scraper in order to automate the regular download and conversion of these PDFs into Excel and Database files. We are using the resulting dataset with more than 285.000 records for our investigations and visualizations, in both print and online. Additionally, we are making this data available in machine readable format for every Argentinian to reuse and share.</p></div>
+<div class="paragraph"><p>The next step was to identify how much the monthly maintenance of a public transport vehicle costed the government on average. To find this out we went to another government website, that of the <a href="http://www.cnrt.gov.ar/index2.htm">Comisi&#243;n Nacional de Regulaci&#243;n del Transporte</a> (The National Commission for the Regulation of Transport), CNRT, responsible for regulating transportation in Argentina. On this website we found a list of bus companies which altogether owned 9000 vehicles. We developed a normalizer to allow us to reconcile bus company names and cross-reference the two datasets.</p></div>
+<div class="paragraph"><p>To proceed we needed the registration number of each vehicle. We found on the CNRT website a list of vehicles per bus line per company with their license plates. Vehicle registration numbers in Argentina are composed of letters and numbers that corresponds to the vehicle&#8217;s &#8220;age&#8221;. For example my car has the IDF234 and the &#8220;I&#8221; corresponds to March-April 2011. We reverse engineered the license plates for buses belonging to all listed companies to find out the average age of buses per company and thus be able to show how much money goes to each company and compare the amounts based on the average age of their vehicles.</p></div>
+<div class="imageblock" id="FIG0324">
+<div class="content">
+<img src="figs/incoming/03-LL-03.jpg" alt="figs/incoming/03-LL-03.jpg"></div>
+<div class="title">Figure 50. Comparing age of fleets to the amount of money they receive from government (La Naci&#243;n)</div>
+</div>
+<div class="paragraph"><p>In the middle of this process the content of the government released PDFs containing the data we needed mysteriously changed although the URLs and names of the files remained the same. One of the things that has changed was that some PDFs were now missing the vertical "totals", making it impossible to cross-check totals across all the entire investigated time period, 2002-2011.</p></div>
+<div class="paragraph"><p>We took this case to a hackathon organised by Hacks/Hackers in Boston where developer Matt Perry generously created what we call the &#8220;PDF Spy.&#8221; This application won the  "Most Intriguing&#8221; category in that event. The <a href="http://gristlabs.com/2011/09/24/pdfspy/">PDF Spy</a> points at a Web page full of PDFs and checks if the content within the PDFs has changed. &#8220;Never be fooled by &#8216;government transparency' again,&#8221; writes Matt Perry.</p></div>
+<div class="sect3">
+<h4 id="_who_worked_on_the_project">Who worked on the project?</h4>
+<div class="paragraph"><p>A team of seven journalists, programmers and an interactive designer have been working on this investigation for 13 months.</p></div>
+<div class="paragraph"><p>The skills we needed for this project were:</p></div>
+<div class="ulist"><ul><li>
+<p>
+Journalists with knowledge of how the subsidies for the public transportation system work and what the risks were; knowledge of the bus companies market.
+</p>
+</li>
+<li>
+<p>
+A programmer skilled in Web scraping, parsing and normalising data, extracting data from PDFs into Excel spreadsheets.
+</p>
+</li>
+<li>
+<p>
+A statistician for conducting the data analysis and the different calculations
+</p>
+</li>
+<li>
+<p>
+A designer for producing the interactive data visualizations.
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_what_tools_did_we_use">What tools did we use?</h4>
+<div class="paragraph"><p>We used VBasic for applications, Excel Macros, Tableau Public and Junar Open Data Platform as well as Ruby on Rails, the Google charts API and Mysql for the Subsidies Explorer.</p></div>
+<div class="paragraph"><p>The project had a great impact. We&#8217;ve had tens of thousands of views and the investigation was featured on the front page of La Naci&#243;n&#8217;s print edition.</p></div>
+<div class="paragraph"><p>The success of this first data journalism project helped us internally to make the case for establishing a data operation that would cover investigative reporting and providing service to the public. This resulted in Data.lanacion.com.ar, a platform where we publish data on various topics of public interest in machine readable format.</p></div>
+<div class="paragraph"><p>&#8212; <em>Ang&#233;lica Peralta Ramos, La Naci&#243;n, Argentina</em></p></div>
+</div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+    
+    
+        <a href="case_studies_15.html" class="btn">Next: Citizen Data Reporters</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

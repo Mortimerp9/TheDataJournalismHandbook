@@ -1,0 +1,194 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Designing With Data - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="delivering_data_5.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="delivering_data_5.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="delivering_data.html" class="btn">Chapter: Delivering Data</a>
+        
+        
+            <a href="delivering_data_6.html" class="btn">Next: Different Charts Tell Different Tales</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="Designing With Data #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_designing_with_data">Designing With Data</h3>
+<div class="paragraph"><p>Similar in a way to graphing connections, flow diagrams also encode information into the connecting lines, usually by thickness and/or colour. For example, with the Eurozone in crisis and several members incapable of meeting their debts, The New York Times <a href="http://www.nytimes.com/interactive/2011/10/23/sunday-review/an-overview-of-the-euro-crisis.html">sought to untangle the web of borrowing</a> that tied EU members together with their trading partners across the Atlantic and in Asia. In one &#8220;state&#8221; of the visualization, the width of the line reflects the amount of credit passing from one country to another, where a yellow to orange colour ramp indicates how &#8220;worrisome&#8221; it is &#8211; i.e., unlikely to be paid back!</p></div>
+<div class="paragraph"><p>On a happier topic, National Geographic magazine produced a <a href="http://www.sankey-diagrams.com/carbon-footprint-sankey-of-wine-transport/">deceptively simple chart showing the connections of three US cities</a> &#8211; New York, Chicago and Los Angeles &#8211; to major wine producing regions, and how the transportation methods bringing product from each of the sources could result in drastically different carbon footprints, making Bordeaux a greener buy for New Yorkers than California wine, for example.</p></div>
+<div class="paragraph"><p>&#8220;SourceMap&#8221;, a project started at MIT&#8217;s business school, uses flow diagrams to take a rigorous look at global procurement for manufactured products, their components and raw materials. Thanks to a lot of heavy research, a user can now search for products ranging from <a href="http://sourcemap.com/view/1760">Ecco brand shoes</a> to <a href="http://sourcemap.com/view/1011">orange juice</a> and find out from what corners of the globe it was sourced from, and what would be its corresponding carbon footprint.</p></div>
+<div class="paragraph"><p><strong>To Show Hierarchy</strong></p></div>
+<div class="imageblock" id="FIG0611">
+<div class="content">
+<img src="figs/incoming/06-GG-06.png" alt="figs/incoming/06-GG-06.png"></div>
+<div class="title">Figure 92. <em>OpenSpending.org</em> (Open Knowledge Foundation)</div>
+</div>
+<div class="paragraph"><p>In 1991, the researcher Ben Shneiderman invented a new visualization form called the &#8220;<a href="http://www.cs.umd.edu/hcil/treemap-history/">treemap</a>&#8221; consisting of multiple boxes concentrically nested inside of each other. The area of a given box represents the quantity it represents, both in itself and as an aggregate of its contents. Whether <a href="http://openspending.org/">visualizing a national budget by agency and sub agency</a>, visualizing the stock market by sector and company, or a programming language by classes and sub-classes, the treemap is a compact and intuitive interface for mapping an entity and its constituent parts. Another effective format is the dendrogram, which looks like a more typical organization chart, where sub-categories continue to branch off a single originating trunk.</p></div>
+<div class="paragraph"><p><strong>To Browse Large Databases</strong></p></div>
+<div class="imageblock" id="FIG0612">
+<div class="content">
+<img src="figs/incoming/06-GG-07.png" alt="figs/incoming/06-GG-07.png"></div>
+<div class="title">Figure 93. <em>Every death on the road in Great Britain 1999-2000</em> (BBC)</div>
+</div>
+<div class="paragraph"><p>While sometimes data vis is very effective at taking familiar information and showing it in a whole new light, what happens when you have brand-new information that people want to navigate? The age of data brings with it startling new discoveries almost every day, from Eric Fischer&#8217;s brilliant <a href="http://www.flickr.com/photos/walkingsf/sets/72157624209158632">geographic analyzes of Flickr snapshots</a> to New York City&#8217;s release of thousands of previously <a href="http://projects.wsj.com/nyc-teachers/">confidential teacher evaluations</a>.</p></div>
+<div class="paragraph"><p>These data sets are at their most powerful when users can dig in and drill down to the information that is most relevant to them.</p></div>
+<div class="paragraph"><p>In early 2010, The New York Times was given access to Netflix&#8217;s normally private records of what areas rent which movies the most often. While Netflix declined to disclose raw numbers, The Times created an <a href="http://www.nytimes.com/interactive/2010/01/10/nyregion/20100110-netflix-map.html">engaging interactive database</a> that let users browse the top 100-ranked rentals in 12 US metro areas, broken down to the postal code level. A colour-graded &#8220;heatmap&#8221; overlaid on each community enabled users to quickly scan and see where a particular title was most popular.</p></div>
+<div class="paragraph"><p>Toward the end of that same year, the Times <a href="http://projects.nytimes.com/census/2010/explorer">published the results of the United States decennial census</a>&#8201;&#8212;&#8201;just hours after it was released. The interface, built in Adobe Flash, offered a number of visualization options and allowed users to browse down to every single census block in the nation (out of 8.2 million) to see the distribution of residents by race, income and education. Such was the resolution of the data, when looking through the data set in the first hours after publication, you wondered if you might be the first person in the world to explore that corner of the database.</p></div>
+<div class="paragraph"><p>Similar laudable uses of visualization as a database front-end include the BBC&#8217;s <a href="http://www.bbc.co.uk/news/uk-15975720">investigation of traffic deaths</a>, and many of the attempts to quickly index large scale data dumps as Wikileaks' release of the Iraq and Afghanistan war logs.</p></div>
+<div class="paragraph"><p><strong>To Envision Alternate Outcomes</strong></p></div>
+<div class="imageblock" id="FIG0613">
+<div class="content">
+<img src="figs/incoming/06-GG-08.png" alt="figs/incoming/06-GG-08.png"></div>
+<div class="title">Figure 94. <em>Budget Forecasts, Compared with Reality</em> (New York Times)</div>
+</div>
+<div class="paragraph"><p>In the New York Times, Amanda Cox&#8217;s &#8220;porcupine chart&#8221; of <a href="http://www.nytimes.com/interactive/2010/02/02/us/politics/20100201-budget-porcupine-graphic.html">tragically optimistic US deficit projections</a> over the years shows how sometimes what happened is less interesting than what didn&#8217;t happen. Cox&#8217;s fever line showing the surging budget deficit after a decade of war and tax breaks shows how unrealistic expectations of the future can turn out to be.</p></div>
+<div class="paragraph"><p>Bret Victor, a longtime Apple interface designer (and originator of the "kill math" theory of visualization to communicate quantitative information), has prototyped a kind of <em><a href="http://worrydream.com/#!/TenBrighterIdeas">reactive document</a></em>. In his example, energy conservation ideas include editable premises, whereby a simple step like shutting off lights in empty rooms could save Americans the output of from two to 40 coal plants. Changing the percentage referenced in the middle of a paragraph of text causes the text in the rest of the page to update accordingly!</p></div>
+<div class="paragraph"><p>For more examples and suggestions, here is a <a href="http://www.ericson.net/content/2011/04/international-journalism-festival-links/">list of different uses for visualizations, maps and interactive graphics</a> compiled by Matthew Ericson of The New York Times.</p></div>
+<div class="paragraph"><p><strong>When Not To Use Data visualization</strong></p></div>
+<div class="paragraph"><p>In the end, effective data visualization depends on good, clean, accurate and meaningful information. Just as much as good quotes, facts and descriptions power good narrative journalism, data vis is only as good as the data that fuels it.</p></div>
+<div class="paragraph"><p><strong>When Your Story Can Be Better Told Through Text or Multimedia</strong></p></div>
+<div class="paragraph"><p>Sometimes the data alone does not tell the story in the most compelling way. While a simple chart illustrating a trend line or summary statistic can be useful, a narrative relating the real-world consequences of an issue can be more immediate and impactful to a reader.</p></div>
+<div class="paragraph"><p><strong>When You Have Very Few Data Points</strong></p></div>
+<div class="paragraph"><p>It has been said, &#8220;a number in isolation doesn&#8217;t mean anything&#8221;. A common refrain from news editors in response to a cited statistic is, &#8220;compared to what?&#8221; Is the trend going up or down? What is normal?</p></div>
+<div class="paragraph"><p><strong>When You Have Very Little Variability in Your Data, No Clear Trend or Conclusion</strong></p></div>
+<div class="paragraph"><p>Sometimes you plot your data in Excel or a similar charting app and discover that the information is noisy &#8211; a lot of fluctuation, or a relatively flat trend. Do you raise the baseline from zero to just below the lowest value, in order to give the line some more shape? No! Sounds like you have ambiguous data and need to do more digging and analysis.</p></div>
+<div class="paragraph"><p><strong>When a Map is Not a Map</strong></p></div>
+<div class="paragraph"><p>When the spatial element is not meaningful or compelling, or distracts attention from more pertinent numeric trends, like change over time or showing similarities between non-adjacent areas.</p></div>
+<div class="paragraph"><p><strong>Don&#8217;t Forget About Tables</strong></p></div>
+<div class="paragraph"><p>If you have relatively few data points but have information that might be of use to some of your readers, consider just laying out the data in tabular form. It&#8217;s clean, easy to read and doesn&#8217;t create unrealistic expectations of "story." In fact, tables can be a very efficient and elegant layout for basic information.</p></div>
+<div class="paragraph"><p>Brian Suda, (optional.is)</p></div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="delivering_data.html" class="btn">Chapter: Delivering Data</a>
+    
+    
+        <a href="delivering_data_6.html" class="btn">Next: Different Charts Tell Different Tales</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

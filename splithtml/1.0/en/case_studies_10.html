@@ -1,0 +1,164 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Hospital Billing - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="case_studies_10.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="case_studies_10.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+        
+        
+            <a href="case_studies_11.html" class="btn">Next: Care Home Crisis</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="Hospital Billing #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_hospital_billing">Hospital Billing</h3>
+<div class="imageblock" id="FIG0318">
+<div class="content">
+<img src="figs/incoming/03-AA.png" alt="figs/incoming/03-AA.png"></div>
+<div class="title">Figure 44. <em>Kwashiorkor</em> (California Watch)</div>
+</div>
+<div class="paragraph"><p>Investigative reporters at <a href="http://californiawatch.org/">CaliforniaWatch</a> received tips that a large chain of hospitals in California might be systematically gaming the federal Medicare program that pays for the costs of medical treatments of Americans aged 65 or older. The particular scam that was alleged is called <em>upcoding</em>, which means reporting patients having more complicated conditions&#8201;&#8212;&#8201;worth higher reimbursement&#8201;&#8212;&#8201;than actually existed. But a key source was a union that was fighting with the hospital chain&#8217;s management, and the CaliforniaWatch team knew that independent verification was necessary for the story to have credibility.</p></div>
+<div class="paragraph"><p>Luckily, California&#8217;s department of health has public records that give very detailed information about each case treated in all the state&#8217;s hospitals. The 128 variables include up to 25 diagnosis codes from the "International Statistical Classification of Diseases and Related Health Problems" manual (commonly known as ICD-9) published by the World Health Organization. While patients aren&#8217;t identified by name in the data, other variables tell the age of the patient, how the costs are paid and which hospital treated him or her. The reporters realized that with these records, they could see if the hospitals owned by the chain were reporting certain unusual conditions at significantly higher rates than were being seen at other hospitals.</p></div>
+<div class="paragraph"><p>The data sets were large; nearly 4 million records per year, and the reporters wanted to study six years worth of records in order to see how patterns changed over time. They ordered the data from the state agency; it arrived on CD-ROMs that were easily copied into a desktop computer. The reporter doing the actual data analysis used a system called <a href="http://www.sas.com/">SAS</a> to work with the data. SAS is very powerful (allowing analysis of many millions of records) and is used by many government agencies, including the California health department, but it is expensive&#8201;&#8212;&#8201;the same kind of analysis could have been done using any of a variety of other database tools, such as Microsoft Access or the open-source <a href="http://www.mysql.com/">MySQL</a>.</p></div>
+<div class="paragraph"><p>With the data in hand and the programs written to study it, finding suspicious patterns was relatively simple. For example, one allegation was that the chain was reporting various degrees of malnutrition at much higher rates than were seen at other hospitals. Using SAS, the data analyst extracted frequency tables that showed the numbers of malnutrition cases being reported each year by each of California&#8217;s more than 300 acute care hospitals. The raw frequency tables then were imported into Microsoft Excel for closer inspection of the patterns for each hospital; Excel&#8217;s ability to sort, filter and calculate rates from the raw numbers made seeing the patterns easy.</p></div>
+<div class="paragraph"><p>Particularly striking were reports of a condition called Kwashiorkor, a protein deficiency syndrome that almost exclusively is seen in starving infants in famine-afflicted developing countries. Yet the chain was reporting its hospitals were diagnosing Kwashiorkor among elderly Californians <a href="http://californiawatch.org/health-and-welfare/hospital-chain-already-under-scrutiny-reports-high-malnutrition-rates-8786">at rates as much as 70 times</a> higher than the state average of all hospitals.</p></div>
+<div class="paragraph"><p>For other stories, the analysis used similar techniques to <a href="http://californiawatch.org/health-and-welfare/prime-healthcares-treatment-rare-ailments-stands-out-13021">examine the reported rates</a> of conditions like septicemia, encephalopathy, malignant hypertension and autonomic nerve disorder. And another analysis <a href="http://californiawatch.org/health-and-welfare/chain-profits-admitting-er-patients-11561">looked at allegations</a> that the chain was admitting from its emergency rooms into hospital care unusually high percentages of Medicare patients, whose source of payment for hospital care is more certain than is the case for many other emergency room patients.</p></div>
+<div class="paragraph"><p>To summarize, stories like these become possible when you use data to produce evidence to test independently allegations being made by sources who may have their own agendas. These stories also are a good example of the necessity for strong public records laws; the reason the government requires hospitals to report this data is so that these kinds of analyzes can be done, whether by government, academics, investigators or even citizen journalists. The subject of these stories is important because it examines whether millions of dollars of public money is being spent properly.</p></div>
+<div class="paragraph"><p>&#8212; <em>Steve Doig,  Walter Cronkite School of Journalism of Arizona State University</em></p></div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+    
+    
+        <a href="case_studies_11.html" class="btn">Next: Care Home Crisis</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
