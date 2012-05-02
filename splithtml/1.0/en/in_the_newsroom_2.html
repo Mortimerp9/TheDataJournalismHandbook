@@ -1,0 +1,166 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>How the News Apps Team at Chicago Tribune Works - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="in_the_newsroom_2.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="in_the_newsroom_2.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="in_the_newsroom.html" class="btn">Chapter: In The Newsroom</a>
+        
+        
+            <a href="in_the_newsroom_3.html" class="btn">Next: Behind the Scenes at the Guardian Datablog</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="How the News Apps Team at Chicago Tribune Works #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_how_the_news_apps_team_at_chicago_tribune_works">How the News Apps Team at Chicago Tribune Works</h3>
+<div class="imageblock" id="FIG025">
+<div class="content">
+<img src="figs/incoming/02-00.jpg" alt="figs/incoming/02-00.jpg"></div>
+<div class="title">Figure 16. The Chicago Tribune news applications team (Photo by Brian Boyer)</div>
+</div>
+<div class="paragraph"><p>The news applications team at the Chicago Tribune is a band of happy hackers embedded in the newsroom. We work closely with editors and reporters to help: (1) research and report stories, (2) illustrate stories online and (3) build evergreen web resources for the fine people of Chicagoland.</p></div>
+<div class="paragraph"><p>It&#8217;s important that we sit in the newsroom. We usually find work via face-to-face conversations with reporters. They know that we&#8217;re happy to help write a screen scraper for a crummy government website, tear up a stack of PDFs, or otherwise turn non-data into something you can analyze. It&#8217;s sort of our team&#8217;s loss leader&#8201;&#8212;&#8201;this way we find out about potential data projects at their outset.</p></div>
+<div class="paragraph"><p>Unlike many teams in this field, our team was founded by technologists for whom journalism was a career change. Some of us acquired a masters degree in journalism after several years coding for business purposes, and others were borrowed from the open government community.</p></div>
+<div class="paragraph"><p>We work in an agile fashion. To make sure we&#8217;re always in sync, every morning begins with a 5-minute stand up meeting. We frequently program in pairs&#8201;&#8212;&#8201;two developers at one keyboard are often more productive than two developers at two keyboards. Most projects don&#8217;t take more than a week to produce, but on longer projects we work in week-long iterations, and show our work to stakeholders&#8201;&#8212;&#8201;reporters and editors usually&#8201;&#8212;&#8201;every week. &#8220;Fail fast&#8221; is the mantra. If you&#8217;re doing it wrong, you need to know as soon as possible, especially when you&#8217;re coding on a deadline!</p></div>
+<div class="paragraph"><p>There&#8217;s a tremendous upside to hacking iteratively, on a deadline: We&#8217;re always updating our toolkit. Every week we crank out an app or two, then, unlike normal software shops, we can put it to the back of our mind and move on to the next project. It&#8217;s a joy we share with the reporters, every week we learn something new.</p></div>
+<div class="paragraph"><p>All app ideas come from the reporters and editors in the newsroom. This, I believe, sets us apart from apps teams in other newsrooms, who frequently spawn their own ideas. We&#8217;ve built strong personal and professional relationships in the newsroom, and folks know that when they have data, they come to us.</p></div>
+<div class="paragraph"><p>Much of our work in the newsroom is reporter support. We help reporters dig through data, turn PDFs back into spreadsheets, screen-scrape websites, etc. It&#8217;s a service that we like to provide because it gets us in early on the data work that&#8217;s happening in the newsroom. Some of that work becomes a news application&#8201;&#8212;&#8201;a map, table, or sometimes a larger-scale website.</p></div>
+<div class="paragraph"><p>Before, we linked to the app from the written story, which didn&#8217;t result in much traffic. These days apps run near the top of our website, and the app links through to the story, which works nicely for both the app and the story. There is a <a href="http://www.chicagotribune.com/news/data/">section of the website for our work</a>, but it&#8217;s not well-trafficked. But that&#8217;s not surprising. &#8220;Hey, today I want some data&#8221; isn&#8217;t a very big use case.</p></div>
+<div class="paragraph"><p>We love page views, and we love the accolades of our peers, but that&#8217;s weak sauce. The motivation should always be impact&#8201;&#8212;&#8201;on people&#8217;s lives, on the law, on holding politicians to account, and so on. The written piece will speak to the trend and humanise it with a few anecdotes. But what&#8217;s the reader to do when they&#8217;ve finished the story? Is their family safe? Are their children being educated properly? Our work sings when it helps a reader find his or her <em>own</em> story in the data. Examples of impactful, personalised work that we&#8217;ve done include our <a href="http://nursinghomes.apps.chicagotribune.com/">Nursing Home Safety Reports</a> and <a href="http://schools.chicagotribune.com/">School Report Card</a> apps.</p></div>
+<div class="paragraph"><p>&#8212; <em>Brian Boyer, Chicago Tribune</em></p></div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="in_the_newsroom.html" class="btn">Chapter: In The Newsroom</a>
+    
+    
+        <a href="in_the_newsroom_3.html" class="btn">Next: Behind the Scenes at the Guardian Datablog</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

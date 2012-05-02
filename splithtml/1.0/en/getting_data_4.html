@@ -1,0 +1,316 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>The Web as a Data Source - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="getting_data_4.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="getting_data_4.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="getting_data.html" class="btn">Chapter: Getting Data</a>
+        
+        
+            <a href="getting_data_5.html" class="btn">Next: Crowdsourcing Data at the Guardian Datablog</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="The Web as a Data Source #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_the_web_as_a_data_source">The Web as a Data Source</h3>
+<div class="paragraph"><p>How can you find out more about something that only exists on the internet? Whether you&#8217;re looking at an email address, website, image, or Wikipedia article, in this chapter I&#8217;ll take you through the tools that will tell you more about their backgrounds.</p></div>
+<div class="sect3">
+<h4 id="_web_tools">Web Tools</h4>
+<div class="paragraph"><p>First, a few different services you can use to discover more about an entire site, rather than a particular page.</p></div>
+<div class="dlist"><dl><dt class="hdlist1">
+Whois
+</dt>
+<dd>
+<p>
+  If you go to <a href="http://whois.domaintools.com/">whois.domaintools.com</a> (or just type whois <a href="http://www.iana.org/domains/example/">www.example.com</a> in Terminal.app on a Mac) you can get the basic registration information for any website. In recent years, some owners have chosen &#8216;private&#8217; registration which hides their details from view, but in many cases you&#8217;ll see a name, address, email and phone number for the person who registered the site. You can also enter numerical IP addresses here and get data on the organization or individual that owns that server. This is especially handy when you&#8217;re trying to track down more information on an abusive or malicious user of a service, since most websites record an IP address for everyone who accesses them.
+</p>
+</dd>
+<dt class="hdlist1">
+Blekko
+</dt>
+<dd>
+<p>
+  The <a href="http://blekko.com/">Blekko</a> search engine offers an unusual amount of insight into the internal statistics it gathers on sites as it crawls the web. If you type in a domain name followed by &#8216;/seo&#8217; you&#8217;ll receive a page of information on that URL. The first tab in <a href="getting_data_4.html#FIG047">Figure 59</a> shows you which other sites are linking to the domain in popularity order. This can be extremely useful when you&#8217;re trying to understand what coverage a site is receiving, and if you want to understand why it&#8217;s ranking highly in Google&#8217;s search results, since they&#8217;re based on those inbound links. <a href="getting_data_4.html#FIG049">Figure 61</a> tells you which other websites are running from the same machine. It&#8217;s common for scammers and spammers to astroturf their way towards legitimacy by building multiple sites that review and link to each other. They look like independent domains, and may even have different registration details but often they&#8217;ll actually live on the same server because that&#8217;s a lot cheaper. These statistics give you an insight into the hidden business structure of the site you&#8217;re researching.
+</p>
+</dd>
+</dl></div>
+<div class="imageblock" id="FIG047">
+<div class="content">
+<img src="figs/incoming/06-PP-01.png" alt="figs/incoming/06-PP-01.png"></div>
+<div class="title">Figure 59. The Blekko search engine (Blekko.com)</div>
+</div>
+<div class="imageblock" id="FIG048">
+<div class="content">
+<img src="figs/incoming/06-PP-02.png" alt="figs/incoming/06-PP-02.png"></div>
+<div class="title">Figure 60. Understanding web popularity: who links to who? The other handy tab is "Crawl stats", especially the "Cohosted with" section. (Blekko.com)</div>
+</div>
+<div class="imageblock" id="FIG049">
+<div class="content">
+<img src="figs/incoming/06-PP-03.png" alt="figs/incoming/06-PP-03.png"></div>
+<div class="title">Figure 61. Spotting web spammers and scammers (Blekko.com)</div>
+</div>
+<div class="dlist"><dl><dt class="hdlist1">
+Compete.com
+</dt>
+<dd>
+<p>
+  By surveying a cross-section of American consumers, <a href="http://www.compete.com/maintenance.html">Compete.com</a> builds up detailed usage statistics for most websites, and they make some basic details freely available. Choose the &#8216;Site Profile&#8217; tab and enter a domain (<a href="getting_data_4.html#FIG0410">Figure 62</a>). You&#8217;ll then see a graph of the site&#8217;s traffic over the last year, together with figures for how many people visited, and how often (as in <a href="getting_data_4.html#FIG0411">Figure 63</a>). Since they&#8217;re based on surveys, the numbers are only approximate, but I&#8217;ve found them reasonably accurate when I&#8217;ve been able to compare them against internal analytics. In particular, they seem to be a good source when comparing two sites, since while the absolute numbers may be off for both, it&#8217;s still a good representation of their relative difference in popularity. They only survey US consumers though, so the data will be poor for predominantly international sites.
+</p>
+</dd>
+</dl></div>
+<div class="imageblock" id="FIG0410">
+<div class="content">
+<img src="figs/incoming/06-PP-04.png" alt="figs/incoming/06-PP-04.png"></div>
+<div class="title">Figure 62. Compete.com&#8217;s site profile service (Compete.com)</div>
+</div>
+<div class="imageblock" id="FIG0411">
+<div class="content">
+<img src="figs/incoming/06-PP-05.png" alt="figs/incoming/06-PP-05.png"></div>
+<div class="title">Figure 63. What&#8217;s in vogue? What&#8217;s in demand?: hotspots on the web (Compete.com)</div>
+</div>
+<div class="dlist"><dl><dt class="hdlist1">
+Google&#8217;s Site Search
+</dt>
+<dd>
+<p>
+  One feature that can be extremely useful when you&#8217;re trying to explore all the content on a particular domain is the &#8216;site:&#8217; keyword. If you add &#8216;site:example.com&#8217; to your search phrase, Google will only return results from the site you&#8217;ve specified. You can even narrow it down further by including the prefix of the pages you&#8217;re interested in, for example &#8216;site:example.com/pages/&#8217;, and you&#8217;ll only see results that match that pattern. This can be extremely useful when you&#8217;re trying to find information that domain owners may have made publicly available but aren&#8217;t keen to publicise, so picking the right keywords can uncover some very revealing material.
+</p>
+</dd>
+</dl></div>
+</div>
+<div class="sect3">
+<h4 id="_web_pages_images_and_videos">Web Pages, Images, and Videos</h4>
+<div class="paragraph"><p>Sometimes you&#8217;re interested in the activity that&#8217;s surrounding a particular story, rather than an entire website. The tools below give you different angles on how people are reading, responding to, copying, and sharing content on the web.</p></div>
+<div class="dlist"><dl><dt class="hdlist1">
+Bit.ly
+</dt>
+<dd>
+<p>
+  I always turn to <a href="http://bitly.com/">bit.ly</a> when I want to know how people are sharing a particular link with each other. To use it, enter the URL you&#8217;re interested in. Then click on the &#8216;Info Page+&#8217; link. That takes you to the full statistics page (though you may need to choose &#8216;aggregrate bit.ly link&#8217; first if you&#8217;re signed in to the service). This will give you an idea of how popular the page is, including activity on Facebook and Twitter, and below that you&#8217;ll see public conversations about the link provided by backtype.com. I find this combination of traffic data and conversations very helpful when I&#8217;m trying to understand why a site or page is popular, and who exactly its fans are. For example, it provided me with strong evidence that the prevailing narrative about grassroots sharing and Sara Palin was wrong.
+</p>
+</dd>
+<dt class="hdlist1">
+Twitter
+</dt>
+<dd>
+<p>
+  As the micro-blogging service becomes more widely used, it becomes more useful as a gauge of how people are sharing and talking about individual pieces of content. It&#8217;s deceptively simple to discover public conversations about a link. You just paste the URL you&#8217;re interested in into the search box, and then possibly hit &#8216;more tweets&#8217; to see the full set of results.
+</p>
+</dd>
+<dt class="hdlist1">
+Google&#8217;s Cache
+</dt>
+<dd>
+<p>
+  When a page becomes controversial, the publishers may take it down or alter it without acknowledgement. If you suspect you&#8217;re running into the problem, the first place to turn is Google&#8217;s cache of the page as it was when it did its last crawl. The frequency of crawls is constantly increasing, so you&#8217;ll have the most luck if you try this within a few hours of the suspected changes. Enter the target URL in Google&#8217;s search box, and then click the triple arrow on the right of the result for that page. A graphical preview should appear, and if you&#8217;re lucky there will be a small &#8216;Cache&#8217; link at the top of it. Click that to see Google&#8217;s snapshot of the page. If that has trouble loading, you can switch over to the more primitive text-only page by clicking another link at the top of the full cache page. You&#8217;ll want to take a screenshot or copy-paste any relevant content you do find, since it may be invalidated at any time by a subsequent crawl.
+</p>
+</dd>
+<dt class="hdlist1">
+The Internet Archive&#8217;s Wayback Machine
+</dt>
+<dd>
+<p>
+  If you need to know how a particular page has changed over a longer time period, like months or years, the Internet Archive runs a service called <a href="http://archive.org/web/web.php">The Wayback Machine</a> that periodically takes snapshots of the most popular pages on the web. You go to the site, enter the link you want to research, and if it has any copies it will show you a calendar so you can pick the time you&#8217;d like to examine. It will then present a version of the page roughly as it was at that point. It will often be missing styling or images, but it&#8217;s usually enough to understand what the focus of that page&#8217;s content was then.
+</p>
+</dd>
+<dt class="hdlist1">
+View Source
+</dt>
+<dd>
+<p>
+  It&#8217;s a bit of a long-shot, but developers often leave comments or other clues in the HTML code that underlies any page. It will be on different menus depending on your browser, but there&#8217;s always a &#8216;View source&#8217; option that will let you browse the raw HTML. You don&#8217;t need to understand what the machine-readable parts mean, just keep an eye out for the pieces of text that are often scattered amongst them. Even if they&#8217;re just copyright notices or mentions of the author&#8217;s names, these can often give important clues about the creation and purpose of the page.
+</p>
+</dd>
+<dt class="hdlist1">
+TinEye
+</dt>
+<dd>
+<p>
+  Sometimes you really want to know the source of an image, but without clear attribution text there&#8217;s no obvious way to do this with traditional search engines like Google. <a href="http://www.tineye.com/">TinEye</a> offers a specialised &#8216;reverse image search&#8217; process, where you give it the image you have, and it finds other pictures on the web that look very similar. Because they use image recognition to do the matching, it even works when a copy has been cropped, distorted or compressed. This can be extremely effective when you suspect that an image that&#8217;s being passed off as original or new is being misrepresented, since it can lead back to the actual source.
+</p>
+</dd>
+<dt class="hdlist1">
+YouTube
+</dt>
+<dd>
+<p>
+  If you click on the &#8216;Statistics&#8217; icon to the lower right of any video, you can get a rich set of information about its audience over time. While it&#8217;s not complete, it is useful for understanding roughly who the viewers are, where they are coming from, and when.
+</p>
+</dd>
+<dt class="hdlist1">
+Emails
+</dt>
+<dd>
+<p>
+ If you have some emails that you&#8217;re researching, you&#8217;ll often want to know more details about the sender&#8217;s identity and location. There isn&#8217;t a good off-the-shelf tool available to help with this, but it can be very helpful to know the basics about the hidden headers included in every email message. These work like postmarks, and can reveal a surprising amount about the sender. In particular, they often include the IP address of the machine that the email was sent from, a lot like caller ID on a phone call. You can then run whois on that IP number to find out which organization owns that machine. If it turns out to be someone like Comcast or AT&amp;T who provide connections to consumers, then you can visit MaxMind to get its approximate location.
+ To view these headers in Gmail, open the message and open the menu next to reply on the top right and choose &#8216;Show original&#8217;.
+ You&#8217;ll then see a new page revealing the hidden content. There will be a couple of dozen lines at the start that are words followed by a colon. The IP address you&#8217;re after may be in one of these, but its name will depend on how the email was sent. If it was from Hotmail, it will be called &#8216;X-Originating-IP:&#8217;, but if it&#8217;s from Outlook or Yahoo it will be in the first line starting with &#8216;Received:&#8217;.
+ Running the address through Whois tells me it&#8217;s assigned to Virgin Media, an ISP in the UK, so I put it through MaxMind&#8217;s geolocation service to discover it&#8217;s coming from my home town of Cambridge. That means I can be reasonably confident this is actually my parents emailing me, not impostors!
+</p>
+</dd>
+</dl></div>
+</div>
+<div class="sect3">
+<h4 id="_trends">Trends</h4>
+<div class="paragraph"><p>If you&#8217;re digging into a broad topic rather than a particular site or item, here&#8217;s a couple of tools that can give you some insight.</p></div>
+<div class="dlist"><dl><dt class="hdlist1">
+Wikipedia Article Traffic
+</dt>
+<dd>
+<p>
+  If you&#8217;re interested in knowing how public interest in a topic or person has varied over time, you can actually get day-by-day viewing figures for any page on Wikipedia at <a href="http://stats.grok.se/">stats.grok.se/</a>. This site is a bit rough and ready, but will let you uncover the information you need with a bit of digging. Enter the name you&#8217;re interested in to get a monthly view of the traffic on that page.
+  That will bring up a graph showing how many times the page was viewed for each day in the month you specify. Unfortunately you can only see one month at a time, so you&#8217;ll have to select a new month and search again to see longer-term changes.
+</p>
+</dd>
+<dt class="hdlist1">
+Google Insights
+</dt>
+<dd>
+<p>
+  You can get a clear view into the public&#8217;s search habits using <a href="http://www.google.com/insights/search/">Insights from Google</a>. Enter a couple of common search phrases, like &#8216;Justin Bieber vs Lady Gaga&#8217;, and you&#8217;ll see a graph of their relative number of searches over time. There&#8217;s a lot of options for refining your view of the data, from narrower geographic areas, to more detail over time. The only disappointment is the lack of absolute values, you only get relative percentages which can be hard to interpret.
+</p>
+</dd>
+</dl></div>
+<div class="imageblock" id="FIG0412">
+<div class="content">
+<img src="figs/incoming/06-PP-06.png" alt="figs/incoming/06-PP-06.png"></div>
+<div class="title">Figure 64. Google Insights (Google)</div>
+</div>
+<div class="paragraph"><p>&#8212; <em>Pete Warden, Independent Data Analyst and Developer</em></p></div>
+</div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="getting_data.html" class="btn">Chapter: Getting Data</a>
+    
+    
+        <a href="getting_data_5.html" class="btn">Next: Crowdsourcing Data at the Guardian Datablog</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

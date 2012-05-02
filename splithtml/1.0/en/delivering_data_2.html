@@ -1,0 +1,168 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>News Apps at ProPublica - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="delivering_data_2.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="delivering_data_2.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="delivering_data.html" class="btn">Chapter: Delivering Data</a>
+        
+        
+            <a href="delivering_data_3.html" class="btn">Next: Visualization as the Workhorse of Data Journalism</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="News Apps at ProPublica #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_news_apps_at_propublica">News Apps at ProPublica</h3>
+<div class="paragraph"><p>A news application is a big interactive database that tells a news story. Think of it like you would any other piece of journalism. It just uses software instead of words and pictures.</p></div>
+<div class="paragraph"><p>By showing each reader data that is specific to them, a news app can help each reader understand a story in a way that&#8217;s personally meaningful to them. It can help a reader understand their personal connection to a broad national phenomenon, and help them attach what they know to what they don&#8217;t know, and thereby encourage a deep understanding of abstract concepts.</p></div>
+<div class="paragraph"><p>We tend to build news apps when we have a dataset (or think we can acquire a dataset) that is national in scope yet granular enough to expose meaningful details.</p></div>
+<div class="paragraph"><p>A news app should tell a story, and just like any good news story, it needs a headline, a byline, a lead, and a nut graph. Some of these concepts can be hard to distinguish in a piece of interactive software, but they&#8217;re there if you look closely.</p></div>
+<div class="paragraph"><p>Also, a news app should be generative&#8201;&#8212;&#8201;meaning it should generate more stories and more reporting. ProPublica&#8217;s best apps have been used as the basis for local stories.</p></div>
+<div class="paragraph"><p>For instance, take our <a href="http://projects.propublica.org/docdollars">Dollars for Docs</a> news app. It tracked, for the first time, millions of dollars of payments by drug companies to doctors, for consulting, speaking, and so on. The news app we built lets readers look up their own doctor and see the payments they&#8217;ve received. Reporters at other news organizations also used the data. More than 125 local news organizations, including the Boston Globe, Chicago Tribune and the St. Louis Post-Dispatch did investigative stories on local doctors based on Dollars for Docs data.</p></div>
+<div class="paragraph"><p>A few of these local stories were the result of formal partnerships, but the majority were done quite independently &#8211; in some cases, we didn&#8217;t have much if any knowledge that the story was being worked on until it came out. As a small but national news organization, this kind of thing is crucial for us. We can&#8217;t have local knowledge in 125 cities, but if our data can help reporters who have local knowledge tell stories with impact, we&#8217;re fulfilling our mission.</p></div>
+<div class="imageblock" id="FIG063">
+<div class="content">
+<img src="figs/incoming/06-FF.png" alt="figs/incoming/06-FF.png"></div>
+<div class="title">Figure 83. <em>Mapping LA</em> (Los Angeles Times)</div>
+</div>
+<div class="paragraph"><p>One of my favorite news apps is the Los Angeles Times&#8217;s <a href="http://projects.latimes.com/mapping-la/neighborhoods/">Mapping L.A.</a>, which started out as a crowdsourced map of Los Angeles&#8217;s many neighbourhoods, which up until Mapping L.A. launched had no independent, widely-accepted set of boundaries. After the initial crowdsourcing project, the Times has been able to use neighborhoods as a framing device for great data reporting&#8201;&#8212;&#8201;things like crime rate by neighborhood, school quality by neighborhood, etc., which they wouldn&#8217;t have been able to do before. So not only is Mapping L.A. both broad and specific, it&#8217;s generative, and it tells people&#8217;s own stories.</p></div>
+<div class="paragraph"><p>The resources necessary to build a news app range pretty widely. The New York Times has dozens of people working on news apps and on interactive graphics. But <a href="http://polltracker.talkingpointsmemo.com/">Talking Points Memo</a> made a cutting edge political poll tracker app with two staffers, neither of whom had computer science degrees.</p></div>
+<div class="paragraph"><p>Like most newsroom-based coders, we follow a modified Agile methodology to build our apps. We iterate quickly and show drafts to the other folks in the newsroom we&#8217;re working with. Most importantly we work really closely with reporters and read their drafts&#8201;&#8212;&#8201;even early ones. We work much more like reporters than like traditional programmers. In addition to writing code, we call sources, gather information and build expertise. It would be pretty difficult to make a good news app using material we don&#8217;t understand.</p></div>
+<div class="paragraph"><p>Why should newsrooms be interested in producing data-driven news apps? Three reasons: It&#8217;s great journalism, it&#8217;s hugely popular&#8201;&#8212;&#8201;ProPublica&#8217;s most popular features are news apps&#8201;&#8212;&#8201;and if we don&#8217;t do it somebody else will. Think of all the scoops we&#8217;d miss! Most importantly, newsrooms should know that they can all do this too. It&#8217;s easier than it looks.</p></div>
+<div class="paragraph"><p>&#8212; <em>Scott Klein, ProPublica</em></p></div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="delivering_data.html" class="btn">Chapter: Delivering Data</a>
+    
+    
+        <a href="delivering_data_3.html" class="btn">Next: Visualization as the Workhorse of Data Journalism</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

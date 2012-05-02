@@ -1,0 +1,254 @@
+
+/* OKFN Brand font, not related to WDMMG. */
+
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('http://datajournalismhandbook.org/1.0/en/img/opensans-light-webfont.eot');
+  src: url('../img/opensans-light-webfont.eot') format('embedded-opentype'), url('../img/opensans-light-webfont.woff') format('woff'), url('../img/opensans-light-webfont.ttf') format('truetype'), url('http://datajournalismhandbook.org/1.0/en/css/opensans-light-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSansSemibold";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../img/opensans-semibold-webfont.eot") format("embedded-opentype"), url("../img/opensans-semibold-webfont.woff") format("woff"), url("../img/opensans-semibold-webfont.ttf") format("truetype"), url("../img/opensans-semibold-webfont.svg") format("svg");
+}
+
+@font-face {
+    font-family: "AllerBold";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../img/aller-bold.ttf") format("truetype");
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #a4a4a4 url(../img/footer.png) repeat;
+}
+
+.wrapper {
+  background: #eee url(../img/bg-noise.png) repeat;
+  padding-bottom: 3em;
+
+  -webkit-box-shadow: 0px 0px 10px 0px #000;
+     -moz-box-shadow: 0px 0px 10px 0px #000;
+          box-shadow: 0px 0px 10px 0px #000;
+}
+
+#main.container {
+  margin-top: 1em;
+  background-color: #fff; 
+  padding: 1em;
+
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px; 
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+
+
+  -webkit-box-shadow: 0px 0px 6px 0px #aaa;
+     -moz-box-shadow: 0px 0px 6px 0px #aaa;
+          box-shadow: 0px 0px 6px 0px #aaa;
+}
+
+.imageblock {
+  display: inline-block;
+  padding: 1em;
+  padding-left: 2em;
+}
+
+.sect1 .imageblock {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin-top: -2em;
+  padding-left: 1em;
+}
+
+
+.imageblock img,
+.imageblock .title {
+  max-width: 550px !important;
+}
+
+@media (max-width: 480px) {
+  .imageblock img,
+  .imageblock .title {
+    max-width: 400px !important;
+  }
+}
+ 
+@media (max-width: 768px) {
+  .imageblock img,
+  .imageblock .title {
+    max-width: 400px !important;
+  }
+}
+
+.imageblock .title {
+  font-family: 'OpenSansLight', Helvetica, sans-serif;
+  padding-top: 0.8em;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+.sect2 .imageblock img {
+    -webkit-box-shadow: 0px 0px 6px 0px #aaa;
+     -moz-box-shadow: 0px 0px 6px 0px #aaa;
+          box-shadow: 0px 0px 6px 0px #aaa;
+}
+
+.sect2 {
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paragraph, .ulist {
+  max-width: 40em;
+}
+
+.tableblock {
+  margin-bottom: 1em;
+}
+
+.paragraph p strong {
+  margin-top: 1em;
+  display: block;
+  clear: right;
+}
+
+body, p, blockquote p {
+  font-family: Palatino, georgia, 'times new roman', serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+blockquote p,
+.quoteblock {
+  font-style: italic;
+  margin-bottom: 1.5em;
+}
+
+.quoteblock .attribution {
+  margin-left: 1em;
+  color: #666;
+}
+
+a {
+  color: #e04349;
+}
+
+h2, h3, h4 {
+  font-family: 'AllerBold', 'OpenSansSemibold', Helvetica, sans-serif;
+  color: #e04349;
+  margin-bottom: 1em;
+  clear: right;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+ul.toc li {
+  margin-bottom: 1em;
+}
+
+.btn {
+  font-family: 'AllerBold', 'OpenSansSemibold', Helvetica, sans-serif;
+}
+
+.header {
+  padding-top: 2em;
+}
+
+.header .title {
+  font-family: 'AllerBold', 'OpenSansSemibold', Helvetica, sans-serif;
+  font-size: 2em;
+  padding-bottom: 0.5em;
+  position: relative;
+}
+
+.header .version {
+  /*
+  position: absolute;
+  right: 10em;
+  display: block;
+  */
+  font-size: 14px;
+  color: #666;
+  font-variant: small-caps;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.header img {
+  margin-bottom: -20px;
+  margin-right: 1em;
+}
+
+footer {
+  color: #fff;
+  font-family: 'OpenSansLight', Helvetica, sans-serif;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+footer p {
+  font-family: 'OpenSansLight', Helvetica, sans-serif;
+  font-size: 0.75em;
+  line-height: 1.5em;
+}
+
+.book-nav-bottom {
+  margin-top: 2em;
+}
+
+.book-nav-top {
+  margin-bottom: 1em;
+}
+
+#get-updates {
+  display: none;
+  width: 700px;
+
+  margin-left: -350px;
+  margin-right: -380px;
+}
+
+.btn-warning {
+  background-color: #e66a6f;
+  background-image: -moz-linear-gradient(top, #eb8589, #e04349);
+  background-image: -ms-linear-gradient(top, #eb8589, #e04349);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eb8589), to(#e04349));
+  background-image: -webkit-linear-gradient(top, #eb8589, #e04349);
+  background-image: -o-linear-gradient(top, #eb8589, #e04349);
+  background-image: linear-gradient(top, #eb8589, #e04349);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eb8589', endColorstr='#e04349', GradientType=0);
+  border-color: #e04349 #e04349 #b81e24;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e04349;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
+  background-color: #e04349;
+  *background-color: #dc2d34;
+}
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #ce2229 \9;
+}

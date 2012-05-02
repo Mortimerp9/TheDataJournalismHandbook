@@ -1,0 +1,450 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Using Data Visualization to Find Insights in Data - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="understanding_data_7.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="understanding_data_7.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="understanding_data.html" class="btn">Chapter: Understanding data</a>
+        
+        
+            <a href="delivering_data.html" class="btn">Next: Delivering Data</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="Using Data Visualization to Find Insights in Data #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_using_data_visualization_to_find_insights_in_data">Using Data Visualization to Find Insights in Data</h3>
+<div class="quoteblock">
+<div class="content">
+<div class="paragraph"><p>visualization is critical to data analysis. It provides a front line of attack, revealing intricate structure in data that cannot be absorbed in any other way. We discover unimagined effects, and we challenge imagined ones.</p></div>
+</div>
+<div class="attribution">
+&#8212; William S. Cleveland: visualizing Data
+</div></div>
+<div class="paragraph"><p>Data by itself, consisting of bits and bytes stored in a file on a computer hard drive, is invisible. In order to be able to see and make any sense of data, we need to visualize it. In this chapter I&#8217;m going to use a broader understanding of the term visualizing, that includes even pure textual representations of data. For instance, just loading a dataset into a spreadsheet software can be considered as data visualization. The invisible data suddenly turns into a visible &#8216;picture&#8217; on our screen. Thus, the questions should not be whether journalists need to visualize data or not, but which kind of visualization may be the most useful in which situation.</p></div>
+<div class="paragraph"><p>In other words: when does it makes sense to go beyond the table visualization? The short answer is: <em>almost always</em>. Tables alone are definitely not sufficient to give us an overview of a dataset. And tables alone don&#8217;t allow us to immediately identify patterns within the data. The most common example here are geographical patterns which can only be observed after visualizing data on a map. But there are also other kinds of patterns which we will see later in this chapter.</p></div>
+<div class="sect3">
+<h4 id="_using_visualization_to_discover_insights">Using visualization to Discover Insights</h4>
+<div class="paragraph"><p>It is unrealistic to expect that data visualization tools and techniques will unleash a barrage of ready-made stories from datasets. There are no rules, no &#8216;protocol&#8217; that will guarantee us a story. Instead, I think it makes more sense to look for &#8216;insights&#8217;, which can be artfully woven into stories in the hands of a good journalist.</p></div>
+<div class="paragraph"><p>Every new visualization is likely to give us some insights into our data. Some of those insights might be already known (but perhaps not yet proven) while other insights might be completely new or even surprising to us. Some new insights might mean the beginning of a story, while others could just be the result of errors in the data, which are most likely to be found by visualizing the data.</p></div>
+<div class="paragraph"><p>In order to make the finding of insights in data more effective, I find the following process very helpful:</p></div>
+<div class="imageblock" id="FIG054">
+<div class="content">
+<img src="figs/incoming/05-BB.png" alt="figs/incoming/05-BB.png"></div>
+<div class="title">Figure 71. Data insights: a visualization (Gregor Aisch)</div>
+</div>
+<div class="paragraph"><p>Each of these steps will be discussed further in this section.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_how_to_visualize_data">How To Visualize Data</h4>
+<div class="paragraph"><p>Visualization provides a unique perspective on the dataset. You can visualize data in lots of different ways.</p></div>
+<div class="paragraph"><p>Tables are very powerful when you are dealing with a relatively small number of data points. They show labels and amounts in the most structured and organized fashion and reveal their full potential when combined with the ability to sort and filter the data. Additionally, Edward Tufte suggested including small chart pieces within table columns, for instance one bar per row or a small line chart (since then also known as a sparkline). But still, as mentioned in the introduction, tables clearly have their limitations. They are great to show you one-dimensional outliers like the top 10, but they are poor when it comes to comparing multiple dimensions at the same time (for instance population per country over time).</p></div>
+<div class="imageblock" id="FIG055">
+<div class="content">
+<img src="figs/incoming/05-BC-graphical-table.png" alt="figs/incoming/05-BC-graphical-table.png"></div>
+<div class="title">Figure 72. Tips from Tufte: sparklines (Gregor Aisch)</div>
+</div>
+<div class="paragraph"><p>Charts, in general, allow you to map dimensions in your data to visual properties of geometric shapes. There&#8217;s much written about the effectiveness of individual visual properties, and the short version is: color is difficult, position is everything. In a scatterplot, for instance, two dimensions are mapped to the to the x- and y-position. You can even display a third dimension to the color or size of the displayed symbols. Line charts are especially suited for showing temporal evolutions while bar charts are perfect for comparing categorical data. You can stack chart elements on top of each other. If you want to compare a small number of groups in your data, displaying multiple instances of the same chart is a very powerful way (also referred to as small multiples). In all charts you can use different kinds of scales to explore different aspects in your data (e.g., linear or log scale).</p></div>
+<div class="paragraph"><p>In fact, most of the data we&#8217;re dealing with is somehow related to actual people. The power of maps is to re-connect the data to our very physical world. Imagine a dataset of geo-located crime incidents. Crucially, you want to see <em>where</em> the crimes happen. Also maps can reveal geographic relations within the data, e.g. a trend from North to South or from urban to rural areas.</p></div>
+<div class="imageblock" id="FIG056">
+<div class="content">
+<img src="figs/incoming/05-BD-choropleth.png" alt="figs/incoming/05-BD-choropleth.png"></div>
+<div class="title">Figure 73. Cloropeth (Gregor Aisch)</div>
+</div>
+<div class="paragraph"><p>Speaking of relations, the fourth most important type of visualization is a graph. Graphs are all about showing the inter-connections (edges) in your data points (nodes). The position of the nodes is then calculated by more or less complex graph layout algorithms which allow us to immediately see the structure within the network. The trick about graph visualization in general is to find a proper way to model the network itself. Not all datasets already include relations and even if they do, it might not be the most interesting aspect to look at. Sometimes it&#8217;s up to the journalist to define edges between nodes. A perfect example of this is the <a href="http://www.slate.com/articles/news_and_politics/politics/2009/04/the_senate_social_network.html">U.S. Senate Social Graph</a>, whose edges connect senators that voted the same in more than 65% of the votes.</p></div>
+<div class="imageblock" id="FIG057">
+<div class="content">
+<img src="figs/incoming/05-BE-graph.jpg" alt="figs/incoming/05-BE-graph.jpg"></div>
+<div class="title">Figure 74. <em>The Senate Social Network</em> (slate.com)</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_analyze_and_interpret_what_you_see">Analyze and Interpret What You See</h4>
+<div class="paragraph"><p>Once you have visualized your data, the next step is to learn something from the picture you created. You could ask yourself:</p></div>
+<div class="ulist"><ul><li>
+<p>
+What can I see in this image? Is it what I expected?
+</p>
+</li>
+<li>
+<p>
+Are there any interesting patterns?
+</p>
+</li>
+<li>
+<p>
+What does this mean in the context of the data?
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Sometimes you might end up with visualization that, in spite of its beauty, might seem to tell you nothing of interest about your data. But there is almost always <em>something</em> that you can learn from any visualization, however trivial.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_document_your_insights_and_steps">Document Your Insights and Steps</h4>
+<div class="paragraph"><p>If you think of this process as a journey through the dataset, the documentation is your travel diary. It will tell you where you have traveled to, what you have seen there and how you made your decisions for your next steps. You can even start your documentation before taking your first look at the data.</p></div>
+<div class="paragraph"><p>In most cases when we start to work with a previously unseen dataset we are already full of expectations and assumptions about the data. Usually there is a reason why we are interested that dataset that we are looking at. It&#8217;s a good idea to start the documentation by writing down these initial thoughts. This helps us to identify our bias and reduces the risk of mis-interpretation of the data by just finding what we originally wanted to find.</p></div>
+<div class="paragraph"><p>I really think that the documentation is the most important step of the process; and it is also the one we&#8217;re most likely to tend to skip. As you will see in the example below, the described process involves a lot of plotting and data wrangling. Looking at a set of 15 charts you created might be very confusing, especially after some time has passed. In fact, those charts are only valuable (to you or any other person you want to communicate your findings) if presented in the context in which they have been created. Hence you should take the time to make some notes on things like:</p></div>
+<div class="ulist"><ul><li>
+<p>
+Why have I created this chart?
+</p>
+</li>
+<li>
+<p>
+What have I done to the data to create it?
+</p>
+</li>
+<li>
+<p>
+What does this chart tell me?
+</p>
+</li>
+</ul></div>
+</div>
+<div class="sect3">
+<h4 id="_transform_data">Transform Data</h4>
+<div class="paragraph"><p>Naturally, with the insights that you have gathered from the last visualization you might have an idea of what you want to see next. You might have found some interesting pattern in the dataset which you now want to inspect in more detail.</p></div>
+<div class="paragraph"><p>Possible transformations are:</p></div>
+<div class="dlist"><dl><dt class="hdlist1">
+Zooming
+</dt>
+<dd>
+<p>
+  To have look at a certain detail in the visualization
+Aggregation
+  To combine many data points into a single group
+</p>
+</dd>
+<dt class="hdlist1">
+Filtering
+</dt>
+<dd>
+<p>
+  To (temporarily) remove data points that are not in our major focus
+</p>
+</dd>
+<dt class="hdlist1">
+Outlier removal
+</dt>
+<dd>
+<p>
+  To get rid of single points that are not representative for 99% of the dataset.
+</p>
+</dd>
+</dl></div>
+<div class="paragraph"><p>Let&#8217;s consider that you have visualized a graph and what came out of this was nothing but a mess of nodes connected through hundreds of edges (a very common result when visualizing so-called <em>densely connected networks</em>), one common transformation step would be to filter some of the edges. If, for instance, the edges represent money flows from donor countries to recipient countries we could remove all flows below a certain amount.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_which_tools_to_use">Which Tools to Use</h4>
+<div class="paragraph"><p>The question of tools is not any easy one. Every data visualization tool available is good at something. Visualization and data wrangling should be easy and cheap. If changing parameters of the visualizations takes you hours, you won&#8217;t experiment that much. That doesn&#8217;t necessarily mean that you don&#8217;t need to learn how to use the tool. But once you learned it, it should be really efficient.</p></div>
+<div class="paragraph"><p>It often makes a lot of sense to choose a tool that covers both the data wrangling and the data visualization issues. Separating the tasks in different tools means that you have to import and export your data very often. Here&#8217;s a short list of some data visualization and wrangling tools:</p></div>
+<div class="ulist"><ul><li>
+<p>
+Spreadsheets like LibreOffice, Excel or Google Docs.
+</p>
+</li>
+<li>
+<p>
+Statistical programming frameworks like R (r-project.org) or Pandas (pandas.pydata.org)
+</p>
+</li>
+<li>
+<p>
+Geographic Information Systems (GIS) like Quantum GIS, ArcGIS, GRASS
+</p>
+</li>
+<li>
+<p>
+visualization Libraries like d3.js (mbostock.github.com/d3), Prefuse (prefuse.org), Flare (flare.prefuse.org)
+</p>
+</li>
+<li>
+<p>
+Data Wrangling Tools: Google Refine, Datawrangler
+</p>
+</li>
+<li>
+<p>
+Non-Programming Visualization Software: like ManyEyes, Tableau Public (tableausoftware.com/products/public)
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>The sample visualizations in the next section were created using R, which is kind of a swiss army knife of (scientific) data visualization.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_an_example_making_sense_of_us_election_contribution_data">An Example: Making Sense of US Election Contribution Data</h4>
+<div class="paragraph"><p>Let us have look at the US Presidential Campaign Finance database which contains about 450,000 contributions to US Presidential candidates. The CSV file is 60 megabytes and way too big to handle easily in a programme like Excel.</p></div>
+<div class="paragraph"><p>In the first step I will explicitly write down my initial assumptions on the FEC contributions dataset:</p></div>
+<div class="ulist"><ul><li>
+<p>
+Obama gets the most contributions (since he is the president and has the greatest popularity)
+</p>
+</li>
+<li>
+<p>
+The number of donations increases as the time moves closer to election date.
+</p>
+</li>
+<li>
+<p>
+Obama gets more small donations than Republican candidates.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>To answer the first question we need to <em>transform</em> the data. Instead of each single contributions we need to sum the total amounts contributed to each candidate. After <em>visualizing</em> the results in a sorted table we can confirm our assumption that Obama would raise the most money:</p></div>
+<table class="tableblock frame-all grid-all" style="
+width:100%;
+"><col style="width:50%;"><col style="width:50%;"><thead><tr><th class="tableblock halign-left valign-top">Candidate </th>
+<th class="tableblock halign-left valign-top"> Amount ($)</th>
+</tr></thead><tbody><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Obama, Barack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">72,453,620.39</p></td>
+</tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Romney, Mitt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50,372,334.87</p></td>
+</tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Perry, Rick</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18,529,490.47</p></td>
+</tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Paul, Ron</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11,844,361.96</p></td>
+</tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Cain, Herman</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7,010,445.99</p></td>
+</tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Gingrich, Newt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6,311,193.03</p></td>
+</tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Pawlenty, Timothy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4,202,769.03</p></td>
+</tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Huntsman, Jon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2,955,726.98</p></td>
+</tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Bachmann, Michelle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2,607,916.06</p></td>
+</tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Santorum, Rick</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,413,552.45</p></td>
+</tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Johnson, Gary Earl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">413,276.89</p></td>
+</tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">Roemer, Charles E. <em>Buddy</em> III</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">291,218.80</p></td>
+</tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">McCotter, Thaddeus G</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">37,030.00</p></td>
+</tr></tbody></table><div class="paragraph"><p>Even though this table shows  the minimum and maximum amounts and the order, it does not tell very much about the underlying patterns in candidate ranking. <a href="understanding_data_7.html#FIG059">Figure 75</a> is another view on the data, a chart type that is called &#8216;dot chart&#8217; in which we can see everything that is shown in the table <em>plus</em> the patterns within the field. For instance, the dot chart allows us to immediately compare the distance between Obama and Romney and Romney and Perry without needing to subtract values. (Note: The dot chart was created using R. You can find links to the source codes at the end of this chapter).</p></div>
+<div class="imageblock" id="FIG059">
+<div class="content">
+<img src="figs/incoming/05-CC.png" alt="figs/incoming/05-CC.png"></div>
+<div class="title">Figure 75. visualizations to spot underlying patterns (Gregor Aisch)</div>
+</div>
+<div class="paragraph"><p>Now, let us proceed with a bigger picture of the dataset. As a first step I <em>visualized</em> all contributed amounts over time in a simple plot. We can see that almost all donations are very very small compared to three really big outliers. Further investigation returns that these huge contribution are coming from the &#8220;Obama Victory Fund 2012&#8221; (also known as Super PAC) and were made on June 29th ($450k), September 29th ($1.5mio) and December 30th ($1.9mio).</p></div>
+<div class="imageblock" id="FIG0510">
+<div class="content">
+<img src="figs/incoming/05-DD.png" alt="figs/incoming/05-DD.png"></div>
+<div class="title">Figure 76. Three clear outliers (Gregor Aisch)</div>
+</div>
+<div class="paragraph"><p>While the contributions by Super PACs alone is undoubtedly the biggest story in the data, it might be also interesting to look beyond it. The point now is that these big contributions disturb our view on the smaller contributions coming from individuals, so we&#8217;re going to remove them from the data. This transform is commonly known as outlier removal. After visualizing again, we can see that most of the donations are within the range of $10k and -$5k.</p></div>
+<div class="imageblock" id="FIG0511">
+<div class="content">
+<img src="figs/incoming/05-EE.png" alt="figs/incoming/05-EE.png"></div>
+<div class="title">Figure 77. Removing the outliers (Gregor Aisch)</div>
+</div>
+<div class="paragraph"><p>According to the contribution limits placed by the FECA individuals are not allowed to donate more than $2500 to each candidate. As we see in the plot, there are numerous donations made above that limit. In particular two big contributions in May attract our attention. It seems that they are <em>mirrored</em> in negative amounts (refunds) June and July. Further investigation in the data reveals the following transactions:</p></div>
+<div class="ulist"><ul><li>
+<p>
+On May 10 <em>Stephen James Davis</em>, San Francisco, employed at Banneker Partners (attorney), has donated <strong>$25,800</strong> to Obama.
+</p>
+</li>
+<li>
+<p>
+On May 25 <em>Cynthia Murphy</em>, Little Rock, employed at the Murphy Group (public relations), has donated <strong>$33,300</strong> to Obama.
+</p>
+</li>
+<li>
+<p>
+On June 15 the amount of <strong>$30,800</strong> was refunded to <em>Cynthia Murphy</em>, which reduced the donated amount to <strong>$2500</strong>.
+</p>
+</li>
+<li>
+<p>
+On July 8 the amount <strong>$25,800</strong> was refunded to <em>Stephen James Davis</em>, which reduced the donated amount to $0.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>What&#8217;s interesting about these numbers? The $30,800 refunded to Cynthia Murphy equals the maximum amount individuals may give to national party committees per year. Maybe she just wanted to combine both donations in one transaction which was rejected. The $25,800 refunded to Stephen James Davis possibly equals the $30,800 minus $5000 (the contribution limit to any other political committee).</p></div>
+<div class="paragraph"><p>Another interesting finding in the last plot is a horizontal line pattern for contributions to Republican candidates at $5000 and -$2500. To see them in more detail, I visualized just the Republican donations. The resulting graphic is kind of the perfect example for patterns in data that would be invisible without data visualization.</p></div>
+<div class="imageblock" id="FIG0512">
+<div class="content">
+<img src="figs/incoming/05-FF.png" alt="figs/incoming/05-FF.png"></div>
+<div class="title">Figure 78. Removing outliers 2 (Gregor Aisch)</div>
+</div>
+<div class="paragraph"><p>What we can see is that there are many $5000 donations to Republican candidates. In fact, a look up in the data returns that these are 1243 donations, which is only 0.3% of the total number of donations, but since those donations are evenly spread across time, the line appears. The interesting thing about the line is that donations by individuals were limited to $2500. Consequently, every dollar above that limited was refunded to the donors, which results in the second line pattern at -$2500. In contrast, the contributions to Barack Obama don&#8217;t show a similar pattern.</p></div>
+<div class="imageblock" id="FIG0513">
+<div class="content">
+<img src="figs/incoming/05-GG.png" alt="figs/incoming/05-GG.png"></div>
+<div class="title">Figure 79. Removing outliers 3 (Gregor Aisch)</div>
+</div>
+<div class="paragraph"><p>So, it might be interesting to find out why thousands of Republican donors did not notice the donation limit for individuals. To further analyze this topic, we can have a look at the total number of $5k donations per candidate.</p></div>
+<div class="imageblock" id="FIG0514">
+<div class="content">
+<img src="figs/incoming/05-HH.png" alt="figs/incoming/05-HH.png"></div>
+<div class="title">Figure 80. Donations per candidate (Gregor Aisch)</div>
+</div>
+<div class="paragraph"><p>Of course, this is a rather distorted view since it does not consider the total amounts of donations received by each candidate. The next plot shows the percentage of $5k donations per candidate.</p></div>
+<div class="imageblock" id="FIG0515">
+<div class="content">
+<img src="figs/incoming/05-II.png" alt="figs/incoming/05-II.png"></div>
+<div class="title">Figure 81. Where does the senator&#8217;s money come from?: donations per candidate (Gregor Aisch)</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_what_to_learn_from_this">What To Learn From This</h4>
+<div class="paragraph"><p>Often, such a visual analysis of a new dataset feels like an exciting journey to an unknown country. You start as a foreigner with just the data and your assumptions, but with every step you make, with every chart you render, you get new insights about the topic. Based on those insights you make decisions for your next steps and what issues are worth further investigation. As you might have seen in this chapter, this process of visualizing, analyzing and transformation of data could be repeated nearly infinitely.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_get_the_source_code">Get the Source Code</h4>
+<div class="paragraph"><p>All of the charts shown in this chapter were created using the wonderful and powerful software R. Created mainly as a scientific visualization tool, it is hard to find any visualization or data wrangling technique that is not already built into R. For those who are interested in how to visualize and wrangle data using R, here&#8217;s the source code of the charts generated in this chapter. Also, there is a wide range of books and tutorials available.</p></div>
+<div class="ulist"><ul><li>
+<p>
+<a href="https://gist.github.com/1769733">dotchart: contributions per candidate</a>
+</p>
+</li>
+<li>
+<p>
+<a href="https://gist.github.com/1816161">plot: all contributions over time</a>
+</p>
+</li>
+<li>
+<p>
+<a href="https://gist.github.com/1816169">plot: contributions by authorised committees</a>
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>&#8212; <em>Gregor Aisch, Open Knowledge Foundation</em></p></div>
+</div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="understanding_data.html" class="btn">Chapter: Understanding data</a>
+    
+    
+        <a href="delivering_data.html" class="btn">Next: Delivering Data</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

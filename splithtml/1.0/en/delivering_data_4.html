@@ -1,0 +1,204 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Using visualizations to Tell Stories - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="delivering_data_4.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="delivering_data_4.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="delivering_data.html" class="btn">Chapter: Delivering Data</a>
+        
+        
+            <a href="delivering_data_5.html" class="btn">Next: Designing With Data</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="Using visualizations to Tell Stories #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_using_visualizations_to_tell_stories">Using visualizations to Tell Stories</h3>
+<div class="paragraph"><p>Data visualization merits consideration for several reasons. Not only can it be strikingly beautiful and attention getting&#8201;&#8212;&#8201;valuable social currency for sharing and attracting readers &#8211; it also leverages a powerful cognitive advantage: fully half of the human brain is devoted to processing visual information. When you present a user with an information graphic, you are reaching them through the mind&#8217;s highest-bandwidth pathway. A well-designed data visualization can give viewers an immediate and profound impression, and cut through the clutter of a complex story to get right to the point.</p></div>
+<div class="paragraph"><p>But unlike other visual media &#8211; such as still photography and video &#8211; data visualization is also deeply rooted in measurable facts. While aesthetically engaging, it is less emotionally charged, more concerned with shedding light than heat. In an era of narrowly-focused media that is often tailored towards audiences with a particular point of view, data vis &#8211; and data journalism in general &#8211; offers the tantalising opportunity for storytelling that is above all driven by facts, not fanaticism.</p></div>
+<div class="paragraph"><p>Moreover, like other forms of narrative journalism, data visualization can be effective for both breaking news &#8211; quickly imparting new information like the location of an accident and the number of casualties &#8211; and for feature stories, where it can go deeper into a topic and offer a new perspective, to help you see something familiar in a completely new way.</p></div>
+<div class="paragraph"><p><strong>Seeing the Familiar in a New Way</strong></p></div>
+<div class="imageblock" id="FIG066">
+<div class="content">
+<img src="figs/incoming/06-GG-01.png" alt="figs/incoming/06-GG-01.png"></div>
+<div class="title">Figure 86. <em>The Jobless Rate for People Like You</em> (New York Times)</div>
+</div>
+<div class="paragraph"><p>In fact, data visualization&#8217;s ability to test conventional wisdom is exemplified by an <a href="http://www.nytimes.com/interactive/2009/11/06/business/economy/unemployment-lines.html">interactive graphic</a> published by The New York Times in late 2009, a year after the global economic crisis began. With the United States' national unemployment rate hovering near 9 percent, users could filter the US population by various demographic and educational filters to see how dramatically rates varied. As it turned out, the rate ranged from less than 4% for middle aged women with advanced degrees to nearly half of all young black men who had not finished high school, and moreover that this disparity was nothing new&#8201;&#8212;&#8201;a fact underscored by fever lines showing the historic values for each of these groups.</p></div>
+<div class="paragraph"><p>Even after you&#8217;ve stopped looking it, a good data vis gets into your head and leaves a lasting mental model of a fact, trend or process. How many people saw the by <a href="http://nctr.pmel.noaa.gov/indo_1204.html">animation distributed by tsunami researchers</a> in December 2004, which showed cascading waves radiating outward from an Indonesian earthquake across the Indian Ocean, threatening millions of coastal residents in South Asia and East Africa?</p></div>
+<div class="paragraph"><p>Data visualizations&#8201;&#8212;&#8201;and the aesthetic associations they engender&#8201;&#8212;&#8201;can even become cultural touchstones, such as the representation of deep political divisions in the United States after the 2000 and 2004 elections, when &#8220;red&#8221; Republican-held states filled the heartland and &#8220;blue&#8221; Democratic states clustered in the Northeast and far West. Never mind that in the US media before 2000, the main broadcast networks had freely switched between red and blue to represent each party, some even choosing to alternate every four years. Thus some Americans' memories of Ronald Reagan&#8217;s <a href="http://www.infobarrel.com/Media/1980_Election_Day_Map">epic 49-state &#8220;blue&#8221; landslide victory</a> for the Republicans in 1984.</p></div>
+<div class="paragraph"><p>But for every graphic that engenders a visual clich&#233;, another comes along to provide powerful factual testimony, such as The New York Times' <a href="http://www.nytimes.com/imagepages/2005/10/02/national/nationalspecial/20051002diaspora_graphic.html">2006 map</a> using differently sized circles to show where hundreds of thousands of evacuees from New Orleans were now living, strewn across the continent by a mixture of personal connections and relocation programs. Would these "stranded" evacuees ever make it back home?</p></div>
+<div class="paragraph"><p>So now that we&#8217;ve discussed the power of data visualization, it&#8217;s fair to ask: when should we use it, and when should we <em>not</em> use it?</p></div>
+<div class="paragraph"><p><strong>When to Use Data visualization?</strong></p></div>
+<div class="paragraph"><p>First of all we&#8217;ll look at some examples of where data visualization might be useful to tell help to tell a story to your readers.</p></div>
+<div class="paragraph"><p><strong>To Show Change Over Time</strong></p></div>
+<div class="imageblock" id="FIG067">
+<div class="content">
+<img src="figs/incoming/06-GG-02.png" alt="figs/incoming/06-GG-02.png"></div>
+<div class="title">Figure 87. <em>How Long Does It Take To Build A Technology Empire?</em> (Wall Street Journal)</div>
+</div>
+<div class="paragraph"><p>Perhaps the most common use of data vis &#8211; as personified by the humble fever chart &#8211; is to show how values have changed over time. The growth of <a href="http://www.google.com/publicdata/explore?ds=d5bncppjof8f9_&amp;met_y=sp_pop_totl&amp;idim=country:CHN&amp;dl=en&amp;hl=en&amp;q=china+population">China&#8217;s population since 1960</a>, or the spike in unemployment since the economic crash of 2008, are good examples. But data vis also can very powerfully show change over time through other graphic forms. The Portuguese researcher Pedro M. Cruz used animated circle charts to dramatically <a href="http://pmcruz.com/visual-experiments/visualizing-empires">show the decline of western European empires</a> since the early 19th century. Sized by total population, Britain, France, Spain and Portugal pop like bubbles as overseas territories achieve independence. There go Mexico, Brazil, Australia, India, wait for it&#8230; there go many African colonies in the early sixties, nearly obliterating France.</p></div>
+<div class="paragraph"><p>A <a href="http://blogs.wsj.com/venturecapital/2009/08/25/how-long-does-it-take-to-build-a-technology-empire/">graph by the Wall Street Journal</a> shows the number of months it took a hundred entrepreneurs to reach the magic number of $50 million in revenues. Created using the free charting and data analysis tool Tableau Public, the comparison resembles the trails of multiple airplanes taking off, some fast, some slow, some heavy, plotted over each other.</p></div>
+<div class="paragraph"><p>Speaking of airplanes, another interesting graph showing change over time <a href="http://www.nytimes.com/interactive/2010/09/27/business/Airline-merger-standalone.html">plots the market share of major US airlines</a> during several decades of industry consolidation. After the Carter administration deregulated passenger aviation, a slew of debt-financed acquisitions created national carriers out of smaller regional airlines, as the graphic in <a href="delivering_data_4.html#FIG">[FIG]</a> by The New York Times illustrates.</p></div>
+<div class="imageblock" id="FIG7">
+<div class="content">
+<img src="figs/incoming/06-GG-02-b.png" alt="figs/incoming/06-GG-02-b.png"></div>
+<div class="title">Figure 88. <em>Converging Flight Paths</em> (New York Times)</div>
+</div>
+<div class="paragraph"><p>Given that almost all casual readers view the horizontal &#8220;x&#8221; axis of a chart as representing time, sometimes it&#8217;s easy to think that <em>all</em> visualizations should show change over time.</p></div>
+<div class="paragraph"><p><strong>To Compare Values</strong></p></div>
+<div class="imageblock" id="FIG068">
+<div class="content">
+<img src="figs/incoming/06-GG-03.png" alt="figs/incoming/06-GG-03.png"></div>
+<div class="title">Figure 89. <em>Counting the human cost of war</em> (BBC)</div>
+</div>
+<div class="paragraph"><p>However, data vis also shines in the area of helping readers compare two or more discrete values, whether to put in context the tragic loss of servicemen and women in the Iraq and Afghan conflicts (by comparing them to the scores of thousands killed in Vietnam and the millions who died in World War Two, as the BBC did in an <a href="http://news.bbc.co.uk/2/hi/uk_news/magazine/8273547.stm">animated slide show</a> accompanying their casualties database); or when National Geographic, <a href="http://ngm.nationalgeographic.com/2007/02/hearts/death-text">using a very minimalist chart</a>, showed how much more likely you were to die of heart disease (1 in 5 chance) or stroke (1 in 24) than, say airplane crashes (1 in 5,051) or a bee sting (1 in 56,789) by showing the relative odds of dying (all overshadowed by a huge arc representing the odds of dying overall: 1 in 1!). BBC, in collaboration with the agency Berg Design, also developed the website &#8220;<a href="http://ngm.nationalgeographic.com/2007/02/hearts/death-text">Dimensions</a>&#8221;, which let you overlay the outlines of major world events&#8201;&#8212;&#8201;the Deepwater Horizon oil spill, the Pakistan floods, for example&#8201;&#8212;&#8201;over a Google map of your own community. (howbigreally.com)</p></div>
+<div class="paragraph"><p><strong>To Show Connections</strong></p></div>
+<div class="imageblock">
+<div class="content">
+<img src="figs/incoming/06-GG-04.png" alt="[FIG06 9]"></div>
+<div class="title">Figure 90. <em>Salary vs Performance</em> (Ben Fry)</div>
+</div>
+<div class="paragraph"><p>France&#8217;s introduction of high-speed rail in 1981 didn&#8217;t literally make the country smaller, but a clever visual representation shows how much less time it now takes to reach different destinations than by conventional rail. A grid laid over the country appears square in the &#8220;before&#8221; image, but is squashed centrally towards Paris in the &#8220;after&#8221; one, showing not just that outbound destinations are "closer," but that the greatest time gains occur in the first part of the journey, before the trains reach unimproved tracks and have to slow down.</p></div>
+<div class="paragraph"><p>For comparisons between two separate variables, look at Ben Fry&#8217;s <a href="http://benfry.com/salaryper/">chart evaluating the performance of Major League Baseball teams</a> relative to their payrolls. In the left column, the teams are ranked by their record to date, while on the right is the total of their player salaries. A line drawn in red (under performing) or blue (over performing) connects the two values, providing a handy sense of which team owners are regretting their expensive players gone bust. Moreover, scrubbing across a timeline provides a lively animation of that season&#8217;s &#8220;pennant race&#8221; to the finish.</p></div>
+<div class="paragraph"><p><strong>To Trace Flows</strong></p></div>
+<div class="imageblock" id="FIG0610">
+<div class="content">
+<img src="figs/incoming/06-GG-05.png" alt="figs/incoming/06-GG-05.png"></div>
+<div class="title">Figure 91. <em>Tropicana</em> (Sourcemap)</div>
+</div>
+<div class="paragraph"><p>Sarah Cohen, Duke University</p></div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="delivering_data.html" class="btn">Chapter: Delivering Data</a>
+    
+    
+        <a href="delivering_data_5.html" class="btn">Next: Designing With Data</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

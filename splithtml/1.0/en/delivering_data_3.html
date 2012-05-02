@@ -1,0 +1,251 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Visualization as the Workhorse of Data Journalism - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="delivering_data_3.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="delivering_data_3.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="delivering_data.html" class="btn">Chapter: Delivering Data</a>
+        
+        
+            <a href="delivering_data_4.html" class="btn">Next: Using visualizations to Tell Stories</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="Visualization as the Workhorse of Data Journalism #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_visualization_as_the_workhorse_of_data_journalism">Visualization as the Workhorse of Data Journalism</h3>
+<div class="paragraph"><p>Before you launch into trying to chart or map your data, take a minute to think about the many roles that static and interactive graphic elements play in your journalism.</p></div>
+<div class="paragraph"><p>In the reporting phase, visualizations can:</p></div>
+<div class="ulist"><ul><li>
+<p>
+Help you identify themes and questions for the rest of your reporting
+</p>
+</li>
+<li>
+<p>
+Identify outliers: good stories, or perhaps errors, in your data
+</p>
+</li>
+<li>
+<p>
+Help you find typical examples
+</p>
+</li>
+<li>
+<p>
+Show you holes in your reporting
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>visualizations also play multiple roles in publishing:</p></div>
+<div class="ulist"><ul><li>
+<p>
+Illustrate a point made in a story in a more compelling way
+</p>
+</li>
+<li>
+<p>
+Remove unnecessarily technical information from prose
+</p>
+</li>
+<li>
+<p>
+Particularly when they are interactive and allow exploration, provide transparency about your reporting process to your readers
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>These roles suggest you should start early and often with visualizations in your reporting, whether or not you start electronic data or records. Don&#8217;t consider it a separate step, something to be considered after the story is largely written. Let this work help guide your reporting.</p></div>
+<div class="paragraph"><p>Getting started sometimes means just putting in a visual form the notes you&#8217;ve already taken. Consider the graphic in <a href="delivering_data_3.html#FIG064">Figure 84</a>, which ran in the Washington Post in 2006.</p></div>
+<div class="imageblock" id="FIG064">
+<div class="content">
+<img src="figs/incoming/06-MM.png" alt="figs/incoming/06-MM.png"></div>
+<div class="title">Figure 84. <em>Farm Subsidies Over Time</em> (Washington Post)</div>
+</div>
+<div class="paragraph"><p>It shows the portion of farm income associated with subsidies and key events over the past 45 years, and was built over a series of months. Finding data that could be used over time with similar definitions and similar meanings was a challenge. Investigating all of the peaks and troughs helped us keep context in mind as we did the rest of our reporting. It also meant that one chore was pretty much finished before the stories were written.</p></div>
+<div class="paragraph"><p>Here are some tips for using visualization to start exploring your datasets.</p></div>
+<div class="sect3">
+<h4 id="_tip_1_use_small_multiples_to_quickly_orient_yourself_in_a_large_dataset">Tip 1: Use small multiples to quickly orient yourself in a large dataset</h4>
+<div class="paragraph"><p>I used this technique at the Washington Post when we were looking into a tip that the George W. Bush administration was awarding grants on political, not substantive, grounds. Most of these aid programs are done by formula, and others have been funded for years, so we were curious whether we might see the pattern by looking at nearly 1,500 different discretionary streams.</p></div>
+<div class="imageblock" id="FIG065">
+<div class="content">
+<img src="figs/incoming/06-NN.png" alt="figs/incoming/06-NN.png"></div>
+<div class="title">Figure 85. <em>HHS Grants</em>:sparklines help in story-spotting (Washington Post)</div>
+</div>
+<div class="paragraph"><p>I created a graph for each program, with the red dots indicating a presidential election year and the green dots indicating a congressional year. The problem: Yes, there was a spike in the six months before the presidential election in several of these programs&#8201;&#8212;&#8201;the red dots with the peak numbers next to them &#8211; but it&#8217;s the wrong election year. Instead of George W. Bush&#8217;s re-election bid, the peak as consistently for the 2000 presidential election, when Bill Clinton was in the White House and his vice president, Al Gore, was running for the office.</p></div>
+<div class="paragraph"><p>This was really easy to see in a series of graphs rather than a table of numbers, and an interactive form let us check various types of grants, regions and agencies. Maps in small multiples can be a way to show time and place on a static image that&#8217;s easy to compare&#8201;&#8212;&#8201;sometimes even easier than an interactive.</p></div>
+<div class="paragraph"><p>This example was created with a short program written in PHP, but it&#8217;s now much easier to do with Excel 2007 and 2010&#8217;s sparklines. Edward Tufte, the visualization expert, invented these &#8220;intense, simple, word-like graphics&#8221; to convey information in a glance across a large dataset. You now see them everywhere, from the little graphs under stock market quotations to win-loss records in sports.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_tip_2_look_at_your_data_upside_down_and_sideways">Tip 2: Look at your data upside down and sideways</h4>
+<div class="paragraph"><p>When you&#8217;re trying to understand a story or a dataset, there&#8217;s no wrong way to look at it; try it every way you can think of, and you&#8217;ll get a different perspective. If you&#8217;re reporting on crime, you might look at one set of charts with change in violent crimes in a year; another might be the percent change; the other might be a comparison to other cities; and another might be a change over time. Use raw numbers, percentages and indexes.</p></div>
+<div class="paragraph"><p>Look at them on different scales. Try following the rule that the x-axis must be zero. Then break that rule and see if you learn more. Try out logarithms and square roots for data with odd distributions.</p></div>
+<div class="paragraph"><p>Keep in mind the research done on visual perception. William Cleveland&#8217;s experiments showed that the eye sees change in an image when the average slope is about 45 degrees. This suggests you ignore the admonitions to always start at zero and instead work toward the most insightful graphic.  Other research in epidemiology has suggested you find a target level as a boundary for your chart.  Each of these ways helps you see the data in different ways. When they&#8217;ve stopped telling you anything new, you know you&#8217;re done.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_tip_3_don_8217_t_assume">Tip 3: Don&#8217;t assume</h4>
+<div class="paragraph"><p>Now that you&#8217;ve looked at your data a variety of ways, you&#8217;ve probably found records that don&#8217;t seem right&#8201;&#8212;&#8201;you may not understand what they meant in the first place, or there are some outliers that seem like they are typos, or there are trends that seem backwards.</p></div>
+<div class="paragraph"><p>If you want to publish anything based on your early exploration or in a published visualization, you have to resolve these questions and you can&#8217;t make assumptions. They&#8217;re either interesting stories or mistakes; interesting challenges to common wisdom or misunderstanding.</p></div>
+<div class="paragraph"><p>It&#8217;s not unusual for local governments to provide spreadsheets filled with errors, and it&#8217;s also easy to misunderstand government jargon in a dataset.</p></div>
+<div class="paragraph"><p>First, walk back your own work. Have you read the documentation, its caveats and does the problem exist in the original version of the data? If everything on your end seems right, then it&#8217;s time to pick up the phone. You&#8217;re going to have to get it resolved if you plan to use it, so you might as well get started now.</p></div>
+<div class="paragraph"><p>That said, not every mistake is important. In campaign finance records, it&#8217;s common to have several hundred postal codes that don&#8217;t exist in a database of 100,000 records. As long as they&#8217;re not all in the same city or within a candidate, the occasional bad data record just doesn&#8217;t matter.</p></div>
+<div class="paragraph"><p>The question to ask yourself is: if I were to use this, would readers have a fundamentally accurate view of what the data says?</p></div>
+</div>
+<div class="sect3">
+<h4 id="_tip_4_avoid_obsessing_over_precision">Tip 4: Avoid obsessing over precision</h4>
+<div class="paragraph"><p>The flip side of not asking enough questions is obsessing over precision before it matters.  Your exploratory graphics should be generally correct, but don&#8217;t worry if you have various levels of rounding, if they don&#8217;t add up to exactly 100 percent or if you are missing one or two years' data out of 20. This is part of the exploration process. You&#8217;ll still see the big trends and know what you have to collect before it&#8217;s time for publication.</p></div>
+<div class="paragraph"><p>In fact, you might consider taking away labeling and scale markers, much like the charts above, to even better get an overall sense of the data.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_tip_5_create_chronologies_of_cases_and_events">Tip 5: Create chronologies of cases and events</h4>
+<div class="paragraph"><p>At the start of any complex story, begin building chronologies of key events and cases. You can use Excel, a Word document or a special tool like TimeFlow for the task, but at some point you will find a dataset you can layer behind it. Reading through it periodically will show you what holes are in your reporting that have to be filled out.</p></div>
+</div>
+<div class="sect3">
+<h4 id="_tip_6_meet_with_your_graphics_department_early_and_often">Tip 6: Meet with your graphics department early and often</h4>
+<div class="paragraph"><p>Brainstorm about possible graphics with the artists and designers in your newsroom. They will have good ways to look at your data, suggestions of how it might work interactively, and know how to connect data and stories. It will make your reporting much easier if you know what you have to collect early on, or if you can alert your team that a graphic isn&#8217;t possible when you can&#8217;t collect it.</p></div>
+<div class="paragraph"><p><strong>TIPS FOR PUBLICATION</strong></p></div>
+<div class="paragraph"><p>You might have spent only a few days or few hours on your exploration, or your story might have taken months to report. But as it becomes time to move to publication, two aspects become more important.</p></div>
+<div class="paragraph"><p>Remember that missing year you had in your early exploration? All of a sudden, you can&#8217;t go any further without it.  All of that bad data you ignored in your reporting? It&#8217;s going to come back to haunt you.</p></div>
+<div class="paragraph"><p>The reason is that you can&#8217;t write around bad data. For a graphic, you either have everything you need or you don&#8217;t, and there&#8217;s no middle ground.</p></div>
+<div class="paragraph"><p><strong>1. Match the effort of the data collection with the interactive graphic</strong></p></div>
+<div class="paragraph"><p>There&#8217;s no hiding in an interactive graphic. If you are really going to have your readers explore the data any way they want, then every data element has to be what it claims to be. Users can find any error at any time, and it could haunt you for months or years.</p></div>
+<div class="paragraph"><p>If you&#8217;re building your own database, it means you should expect to proof read, fact check and copy edit the entire database. If you&#8217;re using government records, you should decide how much spot-checking you&#8217;ll do, and what you plan to do when you find the inevitable error.</p></div>
+<div class="paragraph"><p><strong>2. Design for two types of readers</strong></p></div>
+<div class="paragraph"><p>The graphic&#8201;&#8212;&#8201;whether it&#8217;s a standalone interactive feature or a static visualization that goes with your story&#8201;&#8212;&#8201;should satisfy two different kinds of readers. It should be easy to understand at a glance, but complex enough to offer something interesting to people who want to go further. If you make it interactive, make sure your readers get something more than a single number or name.</p></div>
+<div class="paragraph"><p><strong>3. Convey one idea &#8211; then simplify</strong></p></div>
+<div class="paragraph"><p>Make sure there is one single thing you want people to see? Decide on the overwhelming impression you want a reader to get, and make everything else disappear. In many cases, this means removing information even when the Internet allows you to provide everything. Unless your main purpose is in transparency of reporting, most of the details you collected in your timeline and chronology just aren&#8217;t very important. In a static graphic, it will be intimidating. In an interactive graphic, it will be boring.</p></div>
+</div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="delivering_data.html" class="btn">Chapter: Delivering Data</a>
+    
+    
+        <a href="delivering_data_4.html" class="btn">Next: Using visualizations to Tell Stories</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

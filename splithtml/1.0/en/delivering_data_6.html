@@ -1,0 +1,209 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Different Charts Tell Different Tales - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="delivering_data_6.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="delivering_data_6.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="delivering_data.html" class="btn">Chapter: Delivering Data</a>
+        
+        
+            <a href="delivering_data_7.html" class="btn">Next: Data visualization DIY: Our Top Tools</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="Different Charts Tell Different Tales #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_different_charts_tell_different_tales">Different Charts Tell Different Tales</h3>
+<div class="paragraph"><p>In this digital world, with the promise of immersive 3D experiences, we tend to forget that for such a long time we only had ink on paper. We now think of this static, flat medium as a second class citizen, but in fact over the hundreds of years we&#8217;ve been writing and printing, we&#8217;ve managed to achieve an incredible wealth of knowledge and practices to represent data on the page. While interactive charts, data visualizations and infographics are all the rage, they forego many of the best-practices we&#8217;ve learned. Only when you look back through the history of accomplished charts and graphs can we understand that bank of knowledge and bring it forward into new mediums.</p></div>
+<div class="paragraph"><p>Some of the most famous charts and graphs came out of the need to better explain dense tables of data. William Playfair was a Scottish polyglot who lived in the late 1700s to early 1800s. He single handedly introduced the world to many of the same charts and graphs we still use today. In his 1786 book, <em>Commercial and Political Atlas</em>, Playfair introduced the bar chart to clearly show the import and export quantities of Scotland in a new and visual way.</p></div>
+<div class="imageblock" id="FIG0614">
+<div class="content">
+<img src="figs/incoming/06-TT-01.gif" alt="figs/incoming/06-TT-01.gif"></div>
+<div class="title">Figure 95. An early bar chart (William Playfair)</div>
+</div>
+<div class="paragraph"><p>He then went on to popularise the dreaded pie chart in his 1801 book <em>Statistical Breviary</em>. The need for these new forms of charts and graphs came out of commerce, but as time passed others appeared which were used to save lives. In 1854 John Snow created his now famous &#8216;Cholera Map of London&#8217;, by adding a small black bar over each address where an incident was reported. Over time, an obvious density of the outbreak could be seen and action taken to curb the problem.</p></div>
+<div class="imageblock" id="FIG0615">
+<div class="content">
+<img src="figs/incoming/06-TT-02.jpg" alt="figs/incoming/06-TT-02.jpg"></div>
+<div class="title">Figure 96. <em>Cholera Map of London</em> (John Snow)</div>
+</div>
+<div class="paragraph"><p>As time passed, practitioners of these new chart and graphs got more and more bold and experimented further, pushing the medium toward what we know today. Andr&#233;-Michel Guerry was the first to publish the idea of a map where individual regions where colours different based on some variable. In 1829 he created the first Choropleth by taking regions in France and shading them to represent crime levels. Today we see such maps used to show political polling regions, who voted for whom, wealth distribution and may other geographically linked variables. It seems like such a simple idea, but even today, it is difficult to master and understand if not used wisely.</p></div>
+<div class="imageblock" id="FIG0616">
+<div class="content">
+<img src="figs/incoming/06-TT-03.jpg" alt="figs/incoming/06-TT-03.jpg"></div>
+<div class="title">Figure 97. <em>Chloropleth Map of France</em> showing crime levels (Andr&#233;-Michel Guerry)</div>
+</div>
+<div class="paragraph"><p>There are many tools a good journalist needs to understand and have in their toolbox for constructing visualizations. Rather than jump right in at the deep end, an excellent grounding in charts and graphs is important. Everything you create needs to originate from a series of atomic charts and graphs. If you can master the basics, then you can move onto constructing more complex visualizations which are made-up from these basic units.</p></div>
+<div class="paragraph"><p>Two of the most basic chart types are bar charts and line charts. While they are very similar in their use cases, they can also differ greatly in their meaning. Let&#8217;s take for instance company sales for each month of the year. We&#8217;d get 12 bars representing the amount of money brought in each month.</p></div>
+<div class="imageblock" id="FIG0617">
+<div class="content">
+<img src="figs/incoming/06-TT-04.png" alt="figs/incoming/06-TT-04.png"></div>
+<div class="title">Figure 98. A simple bar chart: useful to represent discrete information</div>
+</div>
+<div class="paragraph"><p>Let&#8217;s look into why this should be bars rather than a line graph. Line graphs are idea for continuous data. With our sales figures it is the sum of the month, not continuous. As a bar, we know that in January the company made $100 and in February it made $120. If we made this a line graph, it would still represent $100 and $120 on the first of each month, but with the line graph we estimate that on the 15th it looks as it the company made $110. Which isn&#8217;t true. Bars are used for discrete units of measurement, whereas lines are used when it is a continuous value, such as temperature.</p></div>
+<div class="imageblock" id="FIG0618">
+<div class="content">
+<img src="figs/incoming/06-TT-05.png" alt="figs/incoming/06-TT-05.png"></div>
+<div class="title">Figure 99. Simple line graphs: useful to represent continuous information</div>
+</div>
+<div class="paragraph"><p>We can see that at 8:00 the temperature was 20C and at 9:00 it was 22C. If we look at the line to guess the temperature at 8:30 we&#8217;d say 21C, which is a correct estimate since temperature is continuous and every point isn&#8217;t a sum of other values, it represents the exact value at that moment or an estimate between two exact measurements.</p></div>
+<div class="paragraph"><p>Both the bar and line have a stacked variation. This is an excellent story telling tool that can work in different ways. Let&#8217;s take for example a company that has 3 locations.</p></div>
+<div class="imageblock" id="FIG0619">
+<div class="content">
+<img src="figs/incoming/06-TT-06.png" alt="figs/incoming/06-TT-06.png"></div>
+<div class="title">Figure 100. A grouped bar graph</div>
+</div>
+<div class="paragraph"><p>For each month we have 3 bars, one for each of the shops, for 36 total for the year. When we place them next to each other, we can quickly see which month which store was earning the most. This is one interesting and valid story, but there is another hidden within the same data. If we stack the bars, so we only have one for each month, we now lose the ability to easily see which store is the biggest earner, but now we can see which months the company as a whole does the best business.</p></div>
+<div class="imageblock" id="FIG0620">
+<div class="content">
+<img src="figs/incoming/06-TT-07.png" alt="figs/incoming/06-TT-07.png"></div>
+<div class="title">Figure 101. A stacked bar graph</div>
+</div>
+<div class="paragraph"><p>Both of these are valid displays of the same information, but they are two different stories using the same starting data. As a journalist, the most important aspect of working with the data is that you first choose the story you are interested in telling. Is if which month is the best for business or is it which store is the flagship? This is just a simple example, but it is really the whole focus of data journalism, asking the right question before getting too far. The story will guide the choose of visualization.</p></div>
+<div class="paragraph"><p>The bar chart and line graph are really the bread and butter of any data journalist. From there you can expand into histograms, horizon graphs, sparklines, stream graphs, and others which all share similar properties and are suited for slightly different situations, including the amount of data or data sources and location of the graphic in terms of the text.</p></div>
+<div class="paragraph"><p>In journalism, one of the very commonly used charting features is a map. Time, amount and geography are common to maps. We always want to know how much is on one area versus another or how the data flows from one area to another. Flow diagrams and choropleths are very useful tools to have in your skill set when dealing with visualization for journalism. Knowing how to colour-code a map properly without misrepresenting or misleading readers is key. Political maps are usually colour-coded as all or nothing for certain regions, even if on part of the country only won by 1%. Colouring does not have to be a binary choice, gradients of colour based on groups can be used with care. Understanding maps is a large part of journalism. Maps easily answer the WHERE part of the 5 w&#8217;s.</p></div>
+<div class="paragraph"><p>Once you have mastered the basic type of charts and graphs can you then begin to build-up more fancy data visualizations. If you don&#8217;t understand the basics, then you are building on a shaky foundation. In much the way you learn how to be a good writer, keeping sentences short, keep the audience in mind, and not over complicating things to make yourself sound smart, but rather convey meaning to the reader. You shouldn&#8217;t go overboard with the data either. Starting small is the most effective way to tell the story, slowly building only when needed.</p></div>
+<div class="quoteblock">
+<div class="content">
+<div class="paragraph"><p>Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts. This requires not that the writer make all his sentences short, or that he avoid all detail and treat his subjects only in outline, but that every word tell.</p></div>
+</div>
+<div class="attribution">
+&#8212; William Strunk Jr. (Elements of Style -- 1918)
+</div></div>
+<div class="paragraph"><p>It is ok to not use every piece of data in your story. You shouldn&#8217;t have to ask permission to be concise, it should be the rule.</p></div>
+<div class="paragraph"><p>Brian Suda, (optional.is)</p></div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="delivering_data.html" class="btn">Chapter: Delivering Data</a>
+    
+    
+        <a href="delivering_data_7.html" class="btn">Next: Data visualization DIY: Our Top Tools</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

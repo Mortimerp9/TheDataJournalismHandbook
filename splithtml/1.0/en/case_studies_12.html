@@ -1,0 +1,174 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>The Tell-All Telephone - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="case_studies_12.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="case_studies_12.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+        
+        
+            <a href="case_studies_13.html" class="btn">Next: Which Car Model? MOT Failure Rates</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="The Tell-All Telephone #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_the_tell_all_telephone">The Tell-All Telephone</h3>
+<div class="imageblock" id="FIG0320">
+<div class="content">
+<img src="figs/incoming/03-BB.png" alt="figs/incoming/03-BB.png"></div>
+<div class="title">Figure 46. <em>The Tell-All Telephone</em> (Zeit Online)</div>
+</div>
+<div class="paragraph"><p>Most people&#8217;s understanding of what can actually be done with the data provided by our mobile phones is theoretical; there were few real-world examples. That is why Malte Spitz from the German Green party decided to publish his own data. To access the information, he had to file a suit against telecommunications giant Deutsche Telekom. The data is the basis for ZEIT Online&#8217;s accompanying interactive map, were contained in a massive Excel document. Each of the 35,831 rows of the spreadsheet represent an instance when Spitz&#8217;s mobile phone transferred information over a half-year period.</p></div>
+<div class="paragraph"><p>Seen individually, the pieces of data are mostly harmless. But taken together they provide what investigators call a profile; a clear picture of a person&#8217;s habits and preferences, and indeed, of his or her life. This profile reveals when Spitz walked down the street, when he took a train, when he was in a plane. It shows that he mainly works in Berlin and which cities he visited. It shows when he was awake and when he slept.</p></div>
+<div class="paragraph"><p>To illustrate just how much detail from someone&#8217;s life can be mined from this stored data, ZEIT ONLINE has "augmented" Spitz&#8217;s information with records that anyone can access: the politician&#8217;s tweets and blog entries were added to the information on his movements. It is the kind of process that any good investigator would likely use to profile a person under observation. ZEIT ONLINE decided to keep one part of Spitz&#8217;s data record private, namely, whom he called and who called him. That kind of information would not only infringe on the privacy of many other people in his life, it would also, even if the numbers were encrypted, reveal much too much about Spitz (but government agents in the real world would have access to this information).</p></div>
+<div class="paragraph"><p>We were very happy to work with Lorenz Matzat and Michael Kreil from Open Data City to find a solution how to understand and extract the geolocation from the dataset. Every connection of Spitz&#8217;s mobile phone has to be triangulated to the positions of the antenna pole. Every pole has three antennas, each covering 120&#186;. The two programmers found out, that the saved position indicated the direction from the mast Spitz&#8217;s mobile phone was connecting from.</p></div>
+<div class="paragraph"><p>Matching this with the positions of the poles-map of the <a href="http://emf2.bundesnetzagentur.de/karte.html">state-controlled agency</a> gave us the possibility to get his position for each of the 260,640 minutes during the 181 days and put it via API on a Google Map. Together with the in-house graphics and design team we created a great interface to navigate: By pushing the play button, you will set off on a trip through Malte Spitz&#8217;s life.</p></div>
+<div class="paragraph"><p>After a very successful launch of the Project in Germany, we noticed that we were having very high traffic from outside Germany and decided to create an English version of the app. After earning the German Grimme Online Award, the project was honored with an ONA Award in September 2011, the first time for a German news website.</p></div>
+<div class="ulist"><ul><li>
+<p>
+<a href="https://docs.google.com/spreadsheet/ccc?authkey=COCjw-kG&amp;key=0An0YnoiCbFHGdGp3WnJkbE4xWTdDTVV0ZDlQeWZmSXc&amp;hl=en_GB&amp;authkey=COCjw-kG#gid=0">See the data</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.zeit.de/datenschutz/malte-spitz-data-retention">Read the story</a>
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>&#8212; <em>Sascha Venohr, Zeit Online</em></p></div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="case_studies.html" class="btn">Chapter: Case studies</a>
+    
+    
+        <a href="case_studies_13.html" class="btn">Next: Which Car Model? MOT Failure Rates</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

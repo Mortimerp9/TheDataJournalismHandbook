@@ -1,0 +1,199 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Data Journalism at the Zeit Online - The Data Journalism Handbook</title>
+  <meta name="description" content="Using data to improve the news.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="http://datajournalismhandbook.org/1.0/en/img/favicon.ico" type="image/x-icon" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/libs/bootstrap-modal.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31257820-1']);
+  _gaq.push(['_setDomainName', 'datajournalismhandbook.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class='wrapper'>
+    <div class='container header'>
+      <div class='row'>
+        <div class='title span7'>
+          Data Journalism Handbook
+          <span class='version'>1.0 BETA</span>
+        </div>
+        <div class='span5 right-align'>
+
+          <a class="btn btn-warning" href="http://shop.oreilly.com/product/0636920025603.do">
+            <i class='icon-book icon-white'></i>  Buy a copy</a>
+
+          <a class="btn btn-primary" data-toggle="modal" href="in_the_newsroom_4.html#get-updates">
+            <i class='icon-eye-open icon-white'></i>  Get Updates</a>
+            
+<a class="btn btn-inverse" data-toggle="modal" href="in_the_newsroom_4.html#give-feedback">
+            <i class='icon-inbox icon-white'></i>  Feedback</a>
+                      
+        </div>
+      </div>
+    </div>
+    <div id="main" class="container">
+      <div class='row'>
+        <div class='span12'>
+          <div class='row'>
+    <div class="btn-group book-nav-top span9">
+        <a class='btn' href="index.html">Home</a>
+        
+            <a href="in_the_newsroom.html" class="btn">Chapter: In The Newsroom</a>
+        
+        
+            <a href="in_the_newsroom_5.html" class="btn">Next: How to Hire a Hacker</a>
+        
+    </div>
+    <div class="span3 right-align">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' st_title="Data Journalism at the Zeit Online #ddjbook" displayText='Tweet'></span>
+    </div>
+</div>
+
+
+<div id='content'>
+    <div class="sect2">
+<h3 id="_data_journalism_at_the_zeit_online">Data Journalism at the Zeit Online</h3>
+<div class="imageblock" id="FIG027">
+<div class="content">
+<img src="figs/incoming/02-03-AA.png" alt="figs/incoming/02-03-AA.png"></div>
+<div class="title">Figure 18. <em>PISA based Wealth Comparison</em> (Zeit Online)</div>
+</div>
+<div class="paragraph"><p>The <a href="http://opendata.zeit.de/pisa-wohlstands-vergleich/visualisierung.php#/en/DEU-OECD">PISA based Wealth Comparison</a> project is an interactive visualization that enables comparison of standards of living in different countries. The interactive uses data from the OECD&#8217;s comprehensive world education ranking report, <a href="http://en.wikipedia.org/wiki/Programme_for_International_Student_Assessment">PISA 2009</a>, published in December 2010. The report is based on a questionnaire which asks fifteen-year-old pupils about their living situation at home.</p></div>
+<div class="paragraph"><p>The idea was to analyze and visualize this data to provide a unique way of comparing standards of living in different countries.</p></div>
+<div class="paragraph"><p>First of all our in-house editorial team decided which facts seemed to be useful to make living standards comparable and should be visualized, including:</p></div>
+<div class="ulist"><ul><li>
+<p>
+Wealth (number of owned TVs, cars and available bathrooms at home)
+</p>
+</li>
+<li>
+<p>
+Family-situation (are there grandparents living with the family together, percentage share of families with only one child, unemployment of parents and mother&#8217;s job status)
+</p>
+</li>
+<li>
+<p>
+Access to knowledge sources (internet at home, frequency of using e-mail and quantity of owned books)
+</p>
+</li>
+<li>
+<p>
+Three additional indicators on the level of development of each country.
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>With the help of the internal design team these facts were translated into self-explanatory icons. A front end design was built to make comparison between the different countries like in a card-game possible.</p></div>
+<div class="paragraph"><p>Next we contacted people from the German <a href="http://opendata-network.org/">Open Data Network</a> to find developers who could help with the project. This community of highly motivated people suggested Gregor Aisch, a very talented information designer, to code the application that would make our dreams come true (without using Flash&#8201;&#8212;&#8201;which was very important to us!). Gregor created a very high quality and interactive visualization with a beautiful bubble-style, based on the <a href="http://raphaeljs.com/">Rapha&#235;l-Javascript Library</a>.</p></div>
+<div class="paragraph"><p>The result of our collaboration was a very successful interactive which got a lot of traffic. It is easy to compare any two countries, which makes it useful as a reference tool. This means that we can re-use it in our daily editorial work. For example if we are covering something related to the living situation in Indonesia, we can quickly and easily embed a graphic <a href="http://opendata.zeit.de/pisa-wohlstands-vergleich/visualisierung.php#/en/DEU-IDN">comparing the living situation in Indonesia and Germany</a>. The know-how transferred to our in house-team was a great investment for future projects.</p></div>
+<div class="paragraph"><p>At the Zeit Online, we&#8217;ve found that <a href="http://www.zeit.de/datenjournalismus">our data journalism projects</a> have brought us a lot of traffic and have helped us to engage audiences in new ways. For example, there was a wide coverage about the situation at the nuclear plant in Fukushima after the Tsunami in Japan. After radioactive material escaped from the power plant, everyone within 30 kilometres of the plant was evacuated. People could read and see a lot about the evacuations. Zeit Online found a innovative way to explain the impact of this to our German audience. We asked: How many people live near a nuclear power plant in Germany? How many people live within a radius of 30 kilometres? A map shows <a href="http://opendata.zeit.de/atomreaktoren/#/en/">how many people would have to be evacuated in a similar situation in Germany</a>. The result: lots and lots of traffic and the project went viral over the social media sphere. Data journalism projects can be relatively easily adapted to other languages. We created an English language version about proximity to nuclear power plants in the US, which was a great traffic motor. News organizations want to be recognized as trusted and authoritative sources amongst their readers.  We find that data journalism projects combined with enabling our readers to look and reuse the raw data brings us a high degree of credibility.</p></div>
+<div class="paragraph"><p>For two years the R&amp;D Department and the Editor-in-Chief at the Zeit Online, Wolfgang Blau, have been advocating data journalism as an important way to tell stories. Transparency, credibility and user engagement are important parts of our philosophy. That is why data journalism is a natural part of our current and future work. Data visualizations can bring value to the reception of a story, and are an attractive way for the whole editorial team to present their content.</p></div>
+<div class="paragraph"><p>For example, on 9th November 2011 Deutsche Bank pledged to stop financing cluster bomb manufacturers. But according to a study by non-profit organzation Facing Finance, the bank continued to approve loans to producers of cluster munitions after that promise was made. <a href="http://zeit.de/wirtschaft/cluster-munition">Our visualization</a> based on the data shows the various flows of money to our readers. The different parts of the Deutsche Bank company are arranged at the top, with the companies accused of involvement in building cluster munitions at the bottom. In between, the individual loans are represented along a timeline. Rolling over the circles shows the details of each transaction. Of course the story could have been told as a written article. But the visualization enables our readers to understand and explore the financial dependencies in a more intuitive way.</p></div>
+<div class="imageblock" id="FIG028">
+<div class="content">
+<img src="figs/incoming/02-03-DD.png" alt="figs/incoming/02-03-DD.png"></div>
+<div class="title">Figure 19. <em>The Business of Bombs</em> (Zeit Online)</div>
+</div>
+<div class="paragraph"><p>To take another example: the <a href="https://www.destatis.de/EN/Homepage.html">German Federal Statistic Office</a> has published a great dataset on vital statistics for Germany, including <a href="https://www.destatis.de/DE/ZahlenFakten/GesellschaftStaat/Bevoelkerung/Bevoelkerungsvorausberechnung/Bevoelkerungsvorausberechnung.html">modelling various demographic scenarios up until 2060</a>. The typical way to represent this is a population pyramid&#8201;&#8212;&#8201;such as <a href="https://www.destatis.de/bevoelkerungspyramide/">the one from the Federal Statistics Agency</a>.</p></div>
+<div class="paragraph"><p>With our colleagues from the science department we tried to give our readers a better way to explore the projected demographic data about our future society. With <a href="http://www.zeit.de/wissen/altersstruktur">our visualization</a>, we present a statistically representative group of 40 people of different ages from the years 1950 till 2060.They are organised into eight different groups. It looks like a group photo of German society at different points in time. The same data visualized in a traditional population pyramid gives only a very abstract feeling of the situation, but a group with kids, younger people, adults and elderly people means our readers can relate to the data more easily. You can just hit the play button to start a journey through eleven decades. You can also enter your own year of birth and gender to become part of the group photo: to see your demographic journey through the decades and your own life expectancy.</p></div>
+<div class="paragraph"><p>&#8212; <em>Sascha Venohr, Zeit Online</em></p></div>
+<div class="imageblock" id="FIG029">
+<div class="content">
+<img src="figs/incoming/02-03-CC.png" alt="figs/incoming/02-03-CC.png"></div>
+<div class="title">Figure 20. visualizing demographic data (Zeit Online)</div>
+</div>
+</div>&#13;
+
+</div>
+
+
+
+<div class="btn-group book-nav-bottom">
+    <a class='btn' href="index.html">Home</a>
+    
+        <a href="in_the_newsroom.html" class="btn">Chapter: In The Newsroom</a>
+    
+    
+        <a href="in_the_newsroom_5.html" class="btn">Next: How to Hire a Hacker</a>
+    
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class='container'>
+    <div class='row'>
+      <div class="span7">
+        <p>
+         The Data Journalism Handbook can be freely copied, redistributed and reused under the terms of the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license. Contributors to the Data Journalism Handbook retain copyright over their respective contributions, and have kindly agreed to release them under the terms of this license.
+        </p>
+
+      </div>
+      <div class="span5 right-align">
+        <a href="http://ejc.net"><img src='img/ejc.gif' width='74' height='33' style='padding-right: 1em;'></a>
+        <a href="http://okfn.org"><img src='img/okfn.png'></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({
+    publisher: "ur-219149ff-684c-bafa-159-8fba20c9e82b"
+  }); </script>
+
+    <div class='modal fade' id='get-updates'>
+    <div class="modal-header">
+      <h3>Subscribe to updates of the Handbook.</h3>
+
+      <div class="modal-body">
+        <iframe style="height:50em; width:100%; border-width:0;" src="https://docs.google.com/spreadsheet/viewform?formkey=dElfSlJVTnZBM3VDV3hGZWxYSjlVSGc6MQ"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class='modal fade' id='give-feedback' style="width:695px;">
+    <div class="modal-header">
+      <h3>Give us your feedback on the handbook.</h3>
+      <div class="modal-body">
+        <iframe style="height:60em; width:100%; border-width:0;" src="https://docs.google.com/a/ejc.net/spreadsheet/viewform?formkey=dFpWdV9xX1JTZXp4MDNPb0N3dWFWSXc6MQ#gid=0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
