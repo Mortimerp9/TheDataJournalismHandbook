@@ -7,6 +7,11 @@ In the 6 months that passed between the book’s inception to its first full rel
 
 To all of those people who have contributed and are not listed below, we say two things. Firstly, thank you. Secondly, can please tell us who you are so that we can give credit where credit is due.
 
+Authors
+-------
+
+This book has been created by many contributors and edited by Jonathan Gray, Lucy Chambers, Wilfried Ruetten and Liliana Bounegru. I am not the author of any part of this book and have just created this repository to help people access other formats of this great handbook and read it on the go.
+
 The GitHub Mirror
 -----------------
 
